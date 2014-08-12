@@ -65,10 +65,12 @@ to a `node_modules` folder in your project directory.
 
 ## Configuration
 
-* **Rename your theme** in packages.json.
+* **Rename your theme** in ```packages.json```
+* **Rename your theme** in ```.bowerrc```
 * **Rename your theme src** folder in ```wp-content/themes``` according to your theme name with the suffix *-src*. For exmaple, if you named your theme in the package.json to ```my-theme```, rename the source folder to ```my-theme-src```.
 * **Configure** your local server. Make a Copy of ```userConfig-example.js``` in *gulp/* and name it **```userConfig.js```**.
   * Set ```localRootUrl``` to the URL of your local server. This is need for browserSync, to synchronize your changes to the browser.
+* Optionally run ```bower install``` before or after you have configured your vendors.
 
 ## Run gulp and be amazed.
 
