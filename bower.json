@@ -1,0 +1,22 @@
+{
+  "name": "gulp-wp-theme",
+  "version": "0.1.0",
+  "description": "WordPress Theme Project Templates for Gulp ",
+  "authors": [
+    "René Stalder <rene@whatwedo.ch>"
+  ],
+  "license": "MIT",
+  "homepage": "http://whatwedo.ch/",
+  "ignore": [
+    "**/.*",
+    "**/node_modules",
+    "**/bower_components",
+    "**/test",
+    "**/tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "normalize-scss": "~3.0.1"
+  }
+}
