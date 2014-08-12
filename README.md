@@ -1,21 +1,28 @@
-gulp-starter
+gulp-wp-theme
 ============
 
-Starter Gulp + Browserify project with examples of how to accomplish some common tasks and workflows. Read the [blog post](http://viget.com/extend/gulp-browserify-starter-faq) for more context, and check out the [Wiki](https://github.com/greypants/gulp-starter/wiki) for some good background knowledge.
+gulp-wp-theme, namely Gulp Wordpress Theme, is a Gulp + Browserify boilerplate with examples of how to accomplish some common tasks and workflows. Read the [blog post](http://viget.com/extend/gulp-browserify-starter-faq) for more context, and check out the [Wiki](https://github.com/greypants/gulp-starter/wiki) for some good background knowledge.
 
-Includes the following tools, tasks, and workflows:
+It was initially started by the [gulp-starter Project](https://github.com/greypants/gulp-starter) and modified by [whatwedo](http://whatwedo.ch) for use with WordPress Themes. Also, all dependencies to Ruby Gem packages were removed.
+
+It includes the following tools, tasks, and workflows:
 
 - [Browserify](http://browserify.org/) (with [browserify-shim](https://github.com/thlorenz/browserify-shim))
 - [Watchify](https://github.com/substack/watchify) (caching version of browserify for super fast rebuilds)
-- [SASS](http://sass-lang.com/) (with [compass](http://compass-style.org/) and [source maps](https://github.com/sindresorhus/gulp-ruby-sass#sourcemap)!)
-- [CoffeeScript](http://coffeescript.org/) (with source maps!)
-- [jQuery](http://jquery.com/) (from npm)
-- [Backbone](http://backbonejs.org/) (from npm)
-- [Handlebars](http://handlebarsjs.com/) (as a backbone dependency)
+- [SASS](http://sass-lang.com/)
 - [BrowserSync](http://browsersync.io) for live reloading and a static server
 - Image optimization
 - Error Notifications in Notification Center
 - Non common-js vendor code (like a jQuery plugin)
+
+## How it works
+
+* You specify your themes name in the package.json, for example **my-wp-theme** and rename the theme folder ```gulp-wp-theme-src``` to ```my-wp-theme-src```.
+Now when you run gulp, the tasks create a second folder ```my-wp-theme-dev``` with your compiled theme.
+* While developing your new theme, you can use ```gulp watch``` for real-time injection of code changes to all your devices and browsers (see [BrowserSync](http://browsersync.io) for further reading).
+* When you're ready for production, create a production ready version of your theme with ```gulp --prod```.
+
+## Installation
 
 If you've never used Node or npm before, you'll need to install Node.
 If you use homebrew, do:
@@ -42,25 +49,10 @@ Alternatively, you can run the version of gulp installed local to the project in
 ./node_modules/.bin/gulp
 ```
 
-### Install Sass and Compass (if you haven't already)
+### Install Sass
 
-
-The gulp-compass module relies on Compass already being installed on your system.
-
-If you have bundler installed, simply run bundle to install dependencies from the `Gemfile`
-
-
-```
-bundle
-```
-
-Otherwise,
-
-
-```
-gem install sass
-gem install compass --pre
-```
+No need to install a Ruby gem here. We maintain the repository to use only NPM and Bower Packages.
+So Sass is going to be installed from NPM.
 
 ### Install npm dependencies
 
@@ -71,14 +63,21 @@ npm install
 This runs through all dependencies listed in `package.json` and downloads them
 to a `node_modules` folder in your project directory.
 
-### Run gulp and be amazed.
+## Configuration
+
+* **Rename your theme** in packages.json.
+* **Rename your theme src** folder in ```wp-content/themes``` according to your theme name with the suffix *-src*. For exmaple, if you named your theme in the package.json to ```my-theme```, rename the source folder to ```my-theme-src```.
+* **Configure** your local server. Make a Copy of ```userConfig-example.js``` in *gulp/* and name it **```userConfig.js```**.
+  * Set ```localRootUrl``` to the URL of your local server. This is need for browserSync, to synchronize your changes to the browser.
+
+## Run gulp and be amazed.
 
 ```
-gulp
+gulp watch
 ```
 
-This will run the `default` gulp task defined in `gulp/tasks/default.js`, which does the following:
+
+This will run the watcher task defined in `gulp/tasks/watch.js`, which does the following:
 - Run 'watch', which has 2 task dependencies, `['setWatch', 'browserSync']`
 - `setWatch` sets a variable that tells the browserify task whether or not to use watchify.
 - `browserSync` has `build` as a task dependecy, so that all your assets will be processed before browserSync tries to serve them to you in the browser.
-- `build` includes the following tasks: `['browserify', 'sass', 'images', 'markup']`
