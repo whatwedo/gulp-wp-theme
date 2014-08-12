@@ -9,45 +9,54 @@
 var browserify   = require('browserify');
 var watchify     = require('watchify');
 var bundleLogger = require('../util/bundleLogger');
+var config			 = require('../config');
 var gulp         = require('gulp');
 var handleErrors = require('../util/handleErrors');
 var source       = require('vinyl-source-stream');
+var argv 				 = require('yargs').argv;
+var gulpif 			 = require('gulp-if');
+var reload = require('browser-sync').reload;
 
 gulp.task('browserify', function() {
+	var src = config.themeSrc + '/resources/javascripts/main.js';
+	var dest = {
+		dev: config.themeDev + '/resources/javascripts/',
+		prod: config.themeProd + '/resources/javascripts/'
+	};
+	var bundleMethod = global.isWatching ? watchify : browserify;
 
-  var bundleMethod = global.isWatching ? watchify : browserify;
+	var bundler = browserify({
+		// Specify the entry point of your app
+		entries: [src],
+		// Add file extentions to make optional in your requires
+		extensions: ['.coffee', '.hbs']
+		//debug: true
+	});
 
-  var bundler = bundleMethod({
-    // Specify the entry point of your app
-    entries: ['./src/javascript/app.coffee'],
-    // Add file extentions to make optional in your requires
-    extensions: ['.coffee', '.hbs'],
-    // Enable source maps!
-    debug: true
-  });
+	var bundle = function() {
+		// Log when bundling starts
+		bundleLogger.start();
 
-  var bundle = function() {
-    // Log when bundling starts
-    bundleLogger.start();
+		return bundler
+			// Enable source maps!
+			.bundle()
+			// Report compile errors
+			.on('error', handleErrors)
+			// Use vinyl-source-stream to make the
+			// stream gulp compatible. Specifiy the
+			// desired output filename here.
+			.pipe(source('app.js'))
+			// Specify the output destination
+			.pipe(gulpif(argv.prod, gulp.dest(dest.prod), gulp.dest(dest.dev)))
+			.pipe(reload({stream:true, once: true}))
+			// Log when bundling completes!
+			.on('end', bundleLogger.end);
+	};
 
-    return bundler
-      .bundle()
-      // Report compile errors
-      .on('error', handleErrors)
-      // Use vinyl-source-stream to make the
-      // stream gulp compatible. Specifiy the
-      // desired output filename here.
-      .pipe(source('app.js'))
-      // Specify the output destination
-      .pipe(gulp.dest('./build/'))
-      // Log when bundling completes!
-      .on('end', bundleLogger.end);
-  };
+	if(global.isWatching) {
+		// Rebundle with watchify on changes.
+		bundler.on('update', bundle);
+	}
 
-  if(global.isWatching) {
-    // Rebundle with watchify on changes.
-    bundler.on('update', bundle);
-  }
-
-  return bundle();
+	return bundle();
 });

@@ -1,10 +1,13 @@
 var browserSync = require('browser-sync');
 var gulp        = require('gulp');
+var config      = require('../config.js');
 
 gulp.task('browserSync', ['build'], function() {
-  browserSync.init(['build/**'], {
-    server: {
-      baseDir: ['build', 'src']
-    }
-  });
+	var args = {};
+
+	args.proxy = config.localRootUrl || null;
+
+	if(args.proxy){
+		browserSync.init(args);
+	}
 });

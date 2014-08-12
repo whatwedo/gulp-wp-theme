@@ -1,14 +1,12 @@
 {
-  "name": "gulp-starter",
-  "version": "0.1.1",
-  "description": "Gulp starter with common tasks and scenarios",
+  "name": "gulp-wp-theme",
+  "version": "0.1.0",
+  "description": "WordPress Theme Project Templates for Gulp ",
   "repository": {
     "type": "git",
-    "url": "git://github.com/greypants/gulp-starter.git"
+    "url": "https://github.com/whatwedo/gulp-wp-theme.git"
   },
   "browser": {
-    "underscore": "backbone/node_modules/underscore",
-    "plugin": "./src/javascript/vendor/jquery-plugin.js"
   },
   "browserify": {
     "transform": [
@@ -25,26 +23,34 @@
       ]
     }
   },
+  "browserify-shim": {
+    "jquery": "global:$"
+  },
   "devDependencies": {
-    "browser-sync": "~0.8.2",
-    "browserify": "~3.36.0",
+    "browser-sync": "~1.3.2",
     "browserify-shim": "~3.4.1",
+    "browserify": "~3.36.0",
     "coffeeify": "~0.6.0",
-    "gulp": "^3.8.0",
-    "gulp-changed": "^0.4.1",
-    "gulp-imagemin": "^0.6.2",
-    "gulp-notify": "^1.4.2",
-    "gulp-ruby-sass": "^0.7.1",
-    "gulp-util": "^3.0.0",
-    "handlebars": "^1.3.0",
+    "connect": "~2.14.3",
+    "gulp-changed": "~0.3.0",
+    "gulp-imagemin": "~0.1.5",
+    "gulp-notify": "~1.2.4",
+    "gulp-open": "~0.2.8",
+    "gulp": "~3.8.7",
     "hbsfy": "~1.3.2",
-    "pretty-hrtime": "~0.2.1",
-    "require-dir": "^0.1.0",
     "vinyl-source-stream": "~0.1.1",
-    "watchify": "~0.10.1"
+    "watchify": "~0.10.1",
+    "gulp-util": "~2.2.14",
+    "pretty-hrtime": "~0.2.1",
+    "yargs": "~1.2.6",
+    "gulp-sass": "~0.7.2",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "tiny-lr": "*",
+    "gulp-livereload": "*",
+    "gulp-plumber": "*",
+    "gulp-if": "~1.2.4"
   },
   "dependencies": {
-    "backbone": "~1.1.2",
-    "jquery": "~2.1.0"
   }
 }
