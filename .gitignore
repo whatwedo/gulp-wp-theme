@@ -3,11 +3,7 @@
 build
 Desktop.ini
 
-**/bower_components
 **/node_modules
-
-# Gulp Configuration
-gulp/userConfig.js
 
 # Ignore automatically generated cruft
 *.log
