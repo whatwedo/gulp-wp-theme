@@ -24,7 +24,7 @@
     }
   },
   "browserify-shim": {
-    "jquery": "global:$"
+    "jQuery": "global:jQuery"
   },
   "devDependencies": {
     "browser-sync": "~1.3.2",
