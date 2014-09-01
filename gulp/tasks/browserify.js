@@ -19,13 +19,15 @@ var reload = require('browser-sync').reload;
 
 gulp.task('browserify', function() {
 	var src = config.themeSrc + '/resources/javascripts/main.js';
+    // Required watchify args
 	var dest = {
 		dev: config.themeDev + '/resources/javascripts/',
 		prod: config.themeProd + '/resources/javascripts/'
 	};
-	var bundleMethod = global.isWatching ? watchify : browserify;
 
 	var bundler = browserify({
+        // Required watchify args
+        cache: {}, packageCache: {}, fullPaths: true,
 		// Specify the entry point of your app
 		entries: [src],
 		// Add file extentions to make optional in your requires
@@ -54,6 +56,7 @@ gulp.task('browserify', function() {
 	};
 
 	if(global.isWatching) {
+        bundler = watchify(bundler);
 		// Rebundle with watchify on changes.
 		bundler.on('update', bundle);
 	}
