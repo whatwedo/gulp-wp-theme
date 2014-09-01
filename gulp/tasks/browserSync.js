@@ -3,11 +3,12 @@ var gulp        = require('gulp');
 var config      = require('../config.js');
 
 gulp.task('browserSync', ['build'], function() {
-	var args = {};
-
-	args.proxy = config.localRootUrl || null;
-
-	if(args.proxy){
-		browserSync.init(args);
-	}
+  browserSync({
+    files: [
+      // Watch everything in build
+      config.themeDev,
+      "!" + config.themeDev + "/**.map"
+    ],
+	proxy: config.localRootUrl || null
+  });
 });
