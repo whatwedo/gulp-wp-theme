@@ -16,7 +16,13 @@ module.exports = {
   },
   sass: {
     src: src + "/sass/*.{sass, scss}",
-    dest: dest
+    dest: dest,
+    options: {
+      compass: true,
+      bundleExec: true,
+      sourcemap: true,
+      sourcemapPath: '../sass'
+    }
   },
   stylus: {
     src: src + "/stylus/*.{styl, stylus}",
