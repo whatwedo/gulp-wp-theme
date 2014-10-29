@@ -4,10 +4,13 @@
 */
 
 var gulp  = require('gulp');
-var config= require('../config');
+var config= require('../config');gulp
 
 gulp.task('watch', ['setWatch', 'browserSync'], function() {
-  gulp.watch(config.sass.src,   ['sass']);
+  gulp.watch(config.stylus.src, ['stylus']);
   gulp.watch(config.images.src, ['images']);
   gulp.watch(config.markup.src, ['markup']);
+
+  // Uncomment to use one iof these watchers
+  // gulp.watch(config.sass.src,   ['sass']);
 });

@@ -18,6 +18,18 @@ module.exports = {
     src: src + "/sass/*.{sass, scss}",
     dest: dest
   },
+  stylus: {
+    src: src + "/stylus/*.{styl, stylus}",
+    dest: dest,
+    options: {
+      compress: false,
+      sourcemap: {
+        inline: true,
+        sourceRoot: '.',
+        basePath: dest
+      }
+    }
+  },
   images: {
     src: src + "/images/**",
     dest: dest + "/images"
