@@ -9,9 +9,9 @@ module.exports = {
       baseDir: [dest, src]
     },
     files: [
-      dest + "/**",
-      // Exclude Map files
-      "!" + dest + "/**.map"
+    dest + "/**",
+    // Exclude Map files
+    "!" + dest + "/**.map"
     ]
   },
   sass: {
@@ -40,6 +40,12 @@ module.exports = {
     src: src + "/images/**",
     dest: dest + "/images"
   },
+  substituter: {
+    enabled: true,
+    cdn: '',
+    js: '<script src="{cdn}/{file}"></script>',
+    css: '<link rel="stylesheet" href="{cdn}/{file}">'
+  },
   markup: {
     src: src + "/htdocs/**",
     dest: dest
@@ -52,13 +58,13 @@ module.exports = {
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{
-      entries: './src/javascript/app.coffee',
+      entries: './src/javascript/app.js',
       dest: dest,
       outputName: 'app.js'
-    }, {
+    }/*, {
       entries: './src/javascript/head.coffee',
       dest: dest,
       outputName: 'head.js'
-    }]
+    }*/]
   }
 };
