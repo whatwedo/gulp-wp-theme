@@ -1,7 +1,7 @@
-gulp-starter
+gulp-boilerplate
 ============
 
-Starter Gulp + Browserify project with examples of how to accomplish some common tasks and workflows. Read the [blog post](http://viget.com/extend/gulp-browserify-starter-faq) for more context, and check out the [Wiki](https://github.com/greypants/gulp-starter/wiki) for some good background knowledge.
+Starter Gulp + Browserify project with some common tasks and workflows we use at [whatwedo](https://whatwedo.ch). Read the original blog posts of the gulp-starter for more context, which is the base project we forked [blog post](http://viget.com/extend/gulp-browserify-starter-faq), and check out the origin [Wiki](https://github.com/greypants/gulp-starter/wiki) for some good background knowledge.
 
 Includes the following tools, tasks, and workflows:
 
@@ -61,7 +61,7 @@ This will run the `default` gulp task defined in `gulp/tasks/default.js`, which 
 - Run 'watch', which has 2 task dependencies, `['setWatch', 'browserSync']`
 - `setWatch` sets a variable that tells the browserify task whether or not to use watchify.
 - `browserSync` has `build` as a task dependecy, so that all your assets will be processed before browserSync tries to serve them to you in the browser.
-- `build` includes the following tasks: `['browserify', 'sass', 'images', 'markup']`
+- `build` includes the following tasks: `['browserify', 'stylus', 'images', 'markup']`
 
 ### Configuration
 All paths and plugin settings have been abstracted into a centralized config object in `gulp/config.js`. Adapt the paths and settings to the structure and needs of your project.
