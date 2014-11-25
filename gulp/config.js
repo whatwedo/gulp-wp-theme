@@ -1,6 +1,6 @@
-var packageJson = require('../package.json');
+var packageConfig = require('../package.json');
 
-var dest = './dist/wp-content/themes';
+var dest = './dist/wp-content/themes/' + packageConfig.name;
 var src = './src';
 
 module.exports = {
@@ -10,6 +10,7 @@ module.exports = {
       // for sass sourcemap linking
       baseDir: [dest, src]
     },
+    open: false,
     files: [
     dest + "/**",
     // Exclude Map files
@@ -17,6 +18,8 @@ module.exports = {
     ]
   },
   /* Example Sass Configuration. Packages have to be installed seperately
+  We're currently use Stylus instead, because of Sass' Ruby dependency and
+  libsass' not further developed functionality.
   sass: {
     src: src + "/sass/*.{sass, scss}",
     dest: dest,
@@ -28,7 +31,7 @@ module.exports = {
     }
   },*/
   stylus: {
-    src: src + "/stylus/*.{styl, stylus}",
+    src: src + "/resources/stylus/*.{styl, stylus}",
     dest: dest,
     options: {
       compress: false,
@@ -40,8 +43,8 @@ module.exports = {
     }
   },
   images: {
-    src: src + "/images/**",
-    dest: dest + "/images"
+    src: src + "/resources/images/**",
+    dest: dest + "/resources/images"
   },
   substituter: {
     enabled: true,
@@ -50,8 +53,15 @@ module.exports = {
     css: '<link rel="stylesheet" href="{cdn}/{file}">'
   },
   markup: {
-    src: src + "**/*.php",
+    src: src + '/templates/**/*.php',
     dest: dest
+  },
+  copy: {
+    // Meta files e.g. Screenshot for WordPress Theme Selector
+    meta: {
+      src: src + '/*.*',
+      dest: dest
+    }
   },
   browserify: {
     // Enable source maps
@@ -61,7 +71,7 @@ module.exports = {
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{
-      entries: './src/javascript/app.js',
+      entries: src + '/resources/javascripts/index.js',
       dest: dest,
       outputName: 'app.js'
     }/*, {
