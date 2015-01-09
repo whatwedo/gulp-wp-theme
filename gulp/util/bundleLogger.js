@@ -8,14 +8,14 @@ var prettyHrtime = require('pretty-hrtime');
 var startTime;
 
 module.exports = {
-	start: function() {
-		startTime = process.hrtime();
-		gutil.log('Running', gutil.colors.green("'bundle'") + '...');
-	},
+  start: function(filepath) {
+    startTime = process.hrtime();
+    gutil.log('Bundling', gutil.colors.green(filepath) + '...');
+  },
 
-	end: function() {
-		var taskTime = process.hrtime(startTime);
-		var prettyTime = prettyHrtime(taskTime);
-		gutil.log('Finished', gutil.colors.green("'bundle'"), 'in', gutil.colors.magenta(prettyTime));
-	}
+  end: function(filepath) {
+    var taskTime = process.hrtime(startTime);
+    var prettyTime = prettyHrtime(taskTime);
+    gutil.log('Bundled', gutil.colors.green(filepath), 'in', gutil.colors.magenta(prettyTime));
+  }
 };
