@@ -4,6 +4,7 @@ build
 Desktop.ini
 
 **/node_modules
+src/bower_components
 
 # Ignore automatically generated cruft
 *.log
