@@ -1,6 +1,6 @@
 {
   "name": "gulp-wp-theme",
-  "version": "0.1.0",
+  "version": "0.2.5",
   "description": "WordPress Theme Project Templates for Gulp ",
   "repository": {
     "type": "git",
@@ -10,9 +10,7 @@
   },
   "browserify": {
     "transform": [
-      "browserify-shim",
-      "coffeeify",
-      "hbsfy"
+      "browserify-shim"
     ]
   },
   "browserify-shim": {
@@ -30,22 +28,19 @@
     "browser-sync": "~1.3.6",
     "browserify": "~5.10.1",
     "browserify-shim": "~3.7.0",
-    "coffeeify": "~0.7.0",
     "glob-stream": "^3.1.15",
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "*",
     "gulp-changed": "^0.4.1",
     "gulp-if": "~1.2.4",
     "gulp-imagemin": "^0.6.2",
-    "gulp-livereload": "*",
     "gulp-minify-css": "^0.3.11",
     "gulp-notify": "^1.4.2",
     "gulp-plumber": "*",
     "gulp-sourcemaps": "^1.2.4",
-    "gulp-stylus": "^1.3.3",
+    "gulp-stylus": "^2.0.0",
     "gulp-substituter": "^0.3.0",
     "gulp-util": "^3.0.0",
-    "handlebars": "^1.3.0",
     "hbsfy": "~2.0.0",
     "pretty-hrtime": "~0.2.1",
     "require-dir": "^0.1.0",

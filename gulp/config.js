@@ -34,12 +34,7 @@ module.exports = {
     src: src + "/resources/stylus/*.{styl, stylus}",
     dest: dest,
     options: {
-      compress: false,
-      sourcemap: {
-        inline: true,
-        sourceRoot: '.',
-        basePath: dest
-      }
+      compress: false
     }
   },
   images: {
