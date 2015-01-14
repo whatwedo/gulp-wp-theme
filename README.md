@@ -9,18 +9,17 @@ It includes the following tools, tasks, and workflows:
 
 - [Browserify](http://browserify.org/) (with [browserify-shim](https://github.com/thlorenz/browserify-shim))
 - [Watchify](https://github.com/substack/watchify) (caching version of browserify for super fast rebuilds)
-- [SASS](http://sass-lang.com/)
+- [Stylus](https://learnboost.github.io/stylus/)
 - [BrowserSync](http://browsersync.io) for live reloading and a static server
 - Image optimization
 - Error Notifications in Notification Center
-- Non common-js vendor code (like a jQuery plugin)
+- Pre configured global WordPress jQuery for use with browserify
 
 ## How it works
 
-* You specify your themes name in the package.json, for example **my-wp-theme** and rename the theme folder ```gulp-wp-theme-src``` to ```my-wp-theme-src```.
-Now when you run gulp, the tasks create a second folder ```my-wp-theme-dev``` with your compiled theme.
-* While developing your new theme, you can use ```gulp watch``` for real-time injection of code changes to all your devices and browsers (see [BrowserSync](http://browsersync.io) for further reading).
-* When you're ready for production, create a production ready version of your theme with ```gulp --prod```.
+You specify your themes name in the package.json, for example **my-wp-theme**
+
+Now when you run gulp, the tasks take the content of the `src` folder, compile it and output the result to `dist/wp-content/themes/<yourthemename>`. You can install WordPress to the `dist` folder to develop your theme local.
 
 ## Installation
 
@@ -49,11 +48,6 @@ Alternatively, you can run the version of gulp installed local to the project in
 ./node_modules/.bin/gulp
 ```
 
-### Install Sass
-
-No need to install a Ruby gem here. We maintain the repository to use only NPM and Bower Packages.
-So Sass is going to be installed from NPM.
-
 ### Install npm dependencies
 
 ```
@@ -67,7 +61,6 @@ to a `node_modules` folder in your project directory.
 
 * **Rename your theme** in ```packages.json```
 * **Rename your theme** in ```.bowerrc```
-* **Rename your theme src** folder in ```wp-content/themes``` according to your theme name with the suffix *-src*. For exmaple, if you named your theme in the package.json to ```my-theme```, rename the source folder to ```my-theme-src```.
 * **Configure** your local server. Make a Copy of ```userConfig-example.js``` in *gulp/* and name it **```userConfig.js```**.
   * Set ```localRootUrl``` to the URL of your local server. This is need for browserSync, to synchronize your changes to the browser.
 * Optionally run ```bower install``` before or after you have configured your vendors.
@@ -75,7 +68,7 @@ to a `node_modules` folder in your project directory.
 ## Run gulp and be amazed.
 
 ```
-gulp watch
+gulp
 ```
 
 
