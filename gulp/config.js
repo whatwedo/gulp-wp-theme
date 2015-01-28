@@ -1,79 +1,36 @@
-var packageConfig = require('../package.json');
+/**
+ * This file checks for different configs and merges them in correct order.
+ * There are following configs
+ *   - config-development.js: The default config parameters
+ *   - config-production.js: Parameters of going live. Minifies and removes debug informations like source maps
+ *   - config-user.js: Parameters override the default config-development.js and are for your development
+ *                     environment. Don't add this to the repository. It's for you, not your team!
+ *
+ *  Config overrides: config-production > config-user > config-development
+ */
 
-var dest = './dist/wp-content/themes/' + packageConfig.name;
-var src = './src';
+var fs = require('fs');
+var gutil = require('gulp-util');
+var args = require('yargs').argv;
+var gulpif = require('gulp-if');
+var extend = require('node.extend');
 
-module.exports = {
-  browserSync: {
-    server: {
-      // We're serving the src folder as well
-      // for sass sourcemap linking
-      baseDir: [dest, src]
-    },
-    open: false,
-    files: [
-    dest + "/**",
-    // Exclude Map files
-    "!" + dest + "/**.map"
-    ]
-  },
-  /* Example Sass Configuration. Packages have to be installed seperately
-  We're currently use Stylus instead, because of Sass' Ruby dependency and
-  libsass' not further developed functionality.
-  sass: {
-    src: src + "/sass/*.{sass, scss}",
-    dest: dest,
-    options: {
-      compass: true,
-      bundleExec: true,
-      sourcemap: true,
-      sourcemapPath: '../sass'
-    }
-  },*/
-  stylus: {
-    src: src + "/resources/stylus/**", // files which are watched for changes, but not compiled directly
-    main: src + "/resources/stylus/*.{styl, stylus}", // files which are compiled with all their decendants
-    dest: dest,
-    options: {
-      compress: false
-    }
-  },
-  images: {
-    src: src + "/resources/images/**",
-    dest: dest + "/resources/images"
-  },
-  substituter: {
-    enabled: true,
-    cdn: '',
-    js: '<script src="{cdn}/{file}"></script>',
-    css: '<link rel="stylesheet" href="{cdn}/{file}">'
-  },
-  markup: {
-    src: src + '/templates/**/*.php',
-    dest: dest
-  },
-  copy: {
-    // Meta files e.g. Screenshot for WordPress Theme Selector
-    meta: {
-      src: src + '/*.*',
-      dest: dest
-    }
-  },
-  browserify: {
-    // Enable source maps
-    debug: true,
-    // Additional file extentions to make optional
-    extensions: ['.coffee', '.hbs'],
-    // A separate bundle will be generated for each
-    // bundle config in the list below
-    bundleConfigs: [{
-      entries: src + '/resources/javascripts/index.js',
-      dest: dest,
-      outputName: 'app.js'
-    }/*, {
-      entries: './src/javascript/head.coffee',
-      dest: dest,
-      outputName: 'head.js'
-    }*/]
-  }
-};
+var config = require('./config-development.js');
+
+var hasUserConfig = fs.existsSync('./gulp/config-user.js');
+var hasProductionConfig = fs.existsSync('./gulp/config-production.js');
+var isProductionEnv = args.env === 'production';
+
+if (hasUserConfig) {
+  var userConfig = require('./config-user.js');
+  var mergedUserConfig = extend(true, {}, config, userConfig);
+  config = extend(true, {}, mergedUserConfig);
+}
+
+if (hasProductionConfig && isProductionEnv) {
+  var prodConfig = require('./config-production.js');
+  var mergedProdConfig = extend(true, {}, config, prodConfig);
+  config = extend(true, {}, mergedProdConfig);
+}
+
+module.exports = config;

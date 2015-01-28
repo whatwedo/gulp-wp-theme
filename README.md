@@ -14,6 +14,7 @@ It includes the following tools, tasks, and workflows:
 - Image optimization
 - Error Notifications in Notification Center
 - Pre configured global WordPress jQuery for use with browserify
+- Different configs for development, production and user specific environment
 
 ## How it works
 
@@ -61,9 +62,13 @@ to a `node_modules` folder in your project directory.
 
 * **Rename your theme** in ```packages.json```
 * **Rename your theme** in ```.bowerrc```
-* **Configure** your local server. Make a Copy of ```userConfig-example.js``` in *gulp/* and name it **```userConfig.js```**.
-  * Set ```localRootUrl``` to the URL of your local server. This is need for browserSync, to synchronize your changes to the browser.
+* **Configure** your local server. Make a Copy of ```config-development.js``` in *gulp/* and name it **```config-user.js```**.
+  * Override the parameters you need to be different in you local development environment in the config-user.js, delete the other parameters you want to keep default.
 * Optionally run ```bower install``` before or after you have configured your vendors.
+
+### Production config
+
+You can override the parameters in ```config-production.js```. These parameters will be used when you compile via `gulp --env production`.
 
 ## Run gulp and be amazed.
 
@@ -76,3 +81,11 @@ This will run the watcher task defined in `gulp/tasks/watch.js`, which does the 
 - Run 'watch', which has 2 task dependencies, `['setWatch', 'browserSync']`
 - `setWatch` sets a variable that tells the browserify task whether or not to use watchify.
 - `browserSync` has `build` as a task dependecy, so that all your assets will be processed before browserSync tries to serve them to you in the browser.
+
+### Run before going live
+
+```
+gulp --env production
+```
+
+You can also use this while development since it starts the watcher with different parameters, but it will minify your scripts and does not output source maps.
