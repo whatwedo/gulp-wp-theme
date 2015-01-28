@@ -31,7 +31,8 @@ module.exports = {
     }
   },*/
   stylus: {
-    src: src + "/resources/stylus/*.{styl, stylus}",
+    src: src + "/resources/stylus/**", // files which are watched for changes, but not compiled directly
+    main: src + "/resources/stylus/*.{styl, stylus}", // files which are compiled with all their decendants
     dest: dest,
     options: {
       compress: false
