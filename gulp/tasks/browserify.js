@@ -24,7 +24,7 @@ gulp.task('browserify', function(callback) {
 
     var bundler = browserify({
       // Required watchify args
-      cache: {}, packageCache: {}, fullPaths: true,
+      cache: {}, packageCache: {}, fullPaths: false,
       // Specify the entry point of your app
       entries: bundleConfig.entries,
       // Add file extentions to make optional in your requires
@@ -32,6 +32,12 @@ gulp.task('browserify', function(callback) {
       // Enable source maps!
       debug: config.debug
     });
+
+    if(config.transforms && config.transforms.uglifyify){
+      bundler.transform({
+        global: true
+      }, 'uglifyify');
+    }
 
     var bundle = function() {
       // Log when bundling starts
