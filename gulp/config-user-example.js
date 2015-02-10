@@ -6,7 +6,8 @@
 *  Parameter from the dev config.
 */
 
-var dest = "./dist";
+var packageConfig = require('../package.json');
+var dest = './dist/wp-content/themes/' + packageConfig.name;
 var src = './src';
 
 module.exports = {
