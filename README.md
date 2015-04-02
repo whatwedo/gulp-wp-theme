@@ -62,7 +62,7 @@ to a `node_modules` folder in your project directory.
 
 * **Rename your theme** in ```packages.json```
 * **Rename your theme** in ```.bowerrc```
-* **Configure** your local server. Make a Copy of ```config-development.js``` in *gulp/* and name it **```config-user.js```**.
+* **Configure** your local server. Rename ```config-user-example.js``` in *gulp/* to **```config-user.js```**.
   * Override the parameters you need to be different in you local development environment in the config-user.js, delete the other parameters you want to keep default.
 * Optionally run ```bower install``` before or after you have configured your vendors.
 
