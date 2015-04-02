@@ -58,11 +58,11 @@ npm install
 This runs through all dependencies listed in `package.json` and downloads them
 to a `node_modules` folder in your project directory.
 
-## Configuration
+## Initial setup
 
 * **Rename your theme** in ```packages.json```
 * **Rename your theme** in ```.bowerrc```
-* **Configure** your local server. Make a Copy of ```config-development.js``` in *gulp/* and name it **```config-user.js```**.
+* **Configure** your local server. Rename ```config-user-example.js``` in *gulp/* to **```config-user.js```**.
   * Override the parameters you need to be different in you local development environment in the config-user.js, delete the other parameters you want to keep default.
 * Optionally run ```bower install``` before or after you have configured your vendors.
 
@@ -76,16 +76,8 @@ You can override the parameters in ```config-production.js```. These parameters 
 gulp
 ```
 
+Whole documentation for the build system can be found in the [`gulp/README.md`](https://github.com/whatwedo/gulp-wp-theme/blob/develop/gulp/README.md).
 
-This will run the watcher task defined in `gulp/tasks/watch.js`, which does the following:
-- Run 'watch', which has 2 task dependencies, `['setWatch', 'browserSync']`
-- `setWatch` sets a variable that tells the browserify task whether or not to use watchify.
-- `browserSync` has `build` as a task dependecy, so that all your assets will be processed before browserSync tries to serve them to you in the browser.
+## Contribution
 
-### Run before going live
-
-```
-gulp --env production
-```
-
-You can also use this while development since it starts the watcher with different parameters, but it will minify your scripts and does not output source maps.
+We are open for any contribution to this project as long it's useful in WordPress Theme projects. Our projects are dog food proven, means we use it in our daily projects.

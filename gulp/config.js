@@ -19,7 +19,7 @@ var config = require('./config-development.js');
 
 var hasUserConfig = fs.existsSync('./gulp/config-user.js');
 var hasProductionConfig = fs.existsSync('./gulp/config-production.js');
-var isProductionEnv = args.env === 'production';
+var isProductionEnv = args.env === 'production' || args.env === 'prod';
 
 if (hasUserConfig) {
   var userConfig = require('./config-user.js');
@@ -28,9 +28,7 @@ if (hasUserConfig) {
 }
 
 if (hasProductionConfig && isProductionEnv) {
-  var prodConfig = require('./config-production.js');
-  var mergedProdConfig = extend(true, {}, config, prodConfig);
-  config = extend(true, {}, mergedProdConfig);
+  config = require('./config-production.js');
 }
 
 module.exports = config;
