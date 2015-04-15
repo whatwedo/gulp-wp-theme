@@ -2,6 +2,19 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## v0.5.0 - 2015-04-15
+### Added
+- Use `make watch` to first start compile tasks, then watcher task.
+
+### Changed
+- Changed default task from watching to compiling
+
+### Fixed
+- Watcher tasks use kind of different logic for newer browserify versions
+
+### Misc
+- *Updated dependency versions*
+
 ## v0.4.0 - 2015-04-02
 ### Added
 - **User config example file** `config-user-example.js`. It holds a typical configuration we use in our projects at [whatwedo](https://whatwedo.ch). It doesn't do anything as long it's not named `config-user.js`. Further informations were added as comments in the file.
