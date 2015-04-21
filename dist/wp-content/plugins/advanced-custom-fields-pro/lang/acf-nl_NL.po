@@ -1,0 +1,2847 @@
+# Copyright (C) 2012 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced Custom Fields - Dutch translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-24 10:46+1000\n"
+"PO-Revision-Date: 2015-03-05 11:26+1000\n"
+"Last-Translator: Elliot Condon <e@elliotcondon.com>\n"
+"Language-Team: We Brand Creative <patrick@wbrnd.nl>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: /Users/Patrick/Documents/MAMP/acf/wp-content/themes/theme/"
+"theme_config/plugins/advanced-custom-fields\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: acf.php:63
+msgid "Advanced Custom Fields"
+msgstr "Advanced Custom Fields"
+
+#: acf.php:251
+msgid "Field Groups"
+msgstr "Groepen"
+
+#: acf.php:252
+msgid "Field Group"
+msgstr "Nieuwe groep"
+
+#: acf.php:253 acf.php:285 admin/admin.php:56
+#: pro/fields/flexible-content.php:521
+msgid "Add New"
+msgstr "Nieuwe groep"
+
+#: acf.php:254
+msgid "Add New Field Group"
+msgstr "Nieuwe groep toevoegen"
+
+#: acf.php:255
+msgid "Edit Field Group"
+msgstr "Bewerk groep"
+
+#: acf.php:256
+msgid "New Field Group"
+msgstr "Nieuwe groep"
+
+#: acf.php:257
+msgid "View Field Group"
+msgstr "Bekijk groep"
+
+#: acf.php:258
+msgid "Search Field Groups"
+msgstr "Zoek groepen"
+
+#: acf.php:259
+msgid "No Field Groups found"
+msgstr "Geen groepen gevonden"
+
+#: acf.php:260
+msgid "No Field Groups found in Trash"
+msgstr "Geen groepen gevonden in de prullenbak"
+
+#: acf.php:283 admin/field-group.php:178 admin/field-group.php:210
+#: admin/field-group.php:249 admin/field-groups.php:487
+msgid "Fields"
+msgstr "Velden"
+
+#: acf.php:284
+msgid "Field"
+msgstr "Veld"
+
+#: acf.php:286
+msgid "Add New Field"
+msgstr "Nieuw veld"
+
+#: acf.php:287
+msgid "Edit Field"
+msgstr "Bewerk veld"
+
+#: acf.php:288 admin/views/field-group-fields.php:18
+#: admin/views/settings-info.php:109
+msgid "New Field"
+msgstr "Nieuw veld"
+
+#: acf.php:289
+msgid "View Field"
+msgstr "Nieuw veld"
+
+#: acf.php:290
+msgid "Search Fields"
+msgstr "Zoek velden"
+
+#: acf.php:291
+msgid "No Fields found"
+msgstr "Geen velden gevonden"
+
+#: acf.php:292
+msgid "No Fields found in Trash"
+msgstr "Geen velden gevonden in de prullenbak"
+
+#: admin/admin.php:52 admin/views/field-group-options.php:93
+msgid "Custom Fields"
+msgstr "Extra velden"
+
+#: admin/field-group.php:68 admin/field-group.php:69 admin/field-group.php:71
+msgid "Field group updated."
+msgstr "Groep bijgewerkt."
+
+#: admin/field-group.php:70
+msgid "Field group deleted."
+msgstr "Groep verwijderd."
+
+#: admin/field-group.php:73
+msgid "Field group published."
+msgstr "Groep gepubliseerd."
+
+#: admin/field-group.php:74
+msgid "Field group saved."
+msgstr "Groep opgeslagen."
+
+#: admin/field-group.php:75
+msgid "Field group submitted."
+msgstr "Groep toegevoegd."
+
+#: admin/field-group.php:76
+msgid "Field group scheduled for."
+msgstr "Groep gepland voor."
+
+#: admin/field-group.php:77
+msgid "Field group draft updated."
+msgstr "Groep concept bijgewerkt."
+
+#: admin/field-group.php:172
+msgid "Move to trash. Are you sure?"
+msgstr "Naar prullenbak. Weet je het zeker?"
+
+#: admin/field-group.php:173
+msgid "checked"
+msgstr "aangevinkt"
+
+#: admin/field-group.php:174
+msgid "No toggle fields available"
+msgstr "Geen aan/uit velden beschikbaar"
+
+#: admin/field-group.php:175
+msgid "Field group title is required"
+msgstr "Titel is verplicht"
+
+#: admin/field-group.php:176 api/api-field-group.php:609
+msgid "copy"
+msgstr "kopie"
+
+#: admin/field-group.php:177
+#: admin/views/field-group-field-conditional-logic.php:67
+#: admin/views/field-group-field-conditional-logic.php:162
+#: admin/views/field-group-locations.php:23
+#: admin/views/field-group-locations.php:132 core/media.php:150
+msgid "or"
+msgstr "of"
+
+#: admin/field-group.php:179
+msgid "Parent fields"
+msgstr "Hoofdpagina"
+
+#: admin/field-group.php:180
+msgid "Sibling fields"
+msgstr "Sibling velden"
+
+#: admin/field-group.php:181
+msgid "Hide / Show All"
+msgstr "Verberg / Toon alle"
+
+#: admin/field-group.php:182
+msgid "Move Custom Field"
+msgstr "Verplaats extra veld"
+
+#: admin/field-group.php:183
+msgid "This field cannot be moved until its changes have been saved"
+msgstr ""
+"Dit veld kan niet worden verplaatst totdat de wijzigingen zijn opgeslagen"
+
+#: admin/field-group.php:184
+msgid "Null"
+msgstr "Nul"
+
+#: admin/field-group.php:185 core/input.php:128
+msgid "The changes you made will be lost if you navigate away from this page"
+msgstr "De gemaakte wijzigingen gaan verloren als je deze pagina verlaat"
+
+#: admin/field-group.php:186
+msgid "The string \"field_\" may not be used at the start of a field name"
+msgstr "De string \"field_\" mag niet voor de veld naam staan"
+
+#: admin/field-group.php:211
+msgid "Location"
+msgstr "Locatie"
+
+#: admin/field-group.php:212 pro/api/api-options-page.php:22
+#: pro/api/api-options-page.php:23
+msgid "Options"
+msgstr "Opties"
+
+#: admin/field-group.php:253
+msgid "Show Field Keys"
+msgstr "Toon veld sleutels"
+
+#: admin/field-group.php:254
+#: admin/views/field-group-field-conditional-logic.php:40
+#: admin/views/field-group-field.php:134 fields/message.php:116
+#: fields/page_link.php:554 fields/page_link.php:568
+#: fields/post_object.php:492 fields/post_object.php:506 fields/select.php:397
+#: fields/select.php:411 fields/select.php:425 fields/select.php:439
+#: fields/taxonomy.php:732 fields/user.php:377 fields/user.php:391
+#: fields/wysiwyg.php:384 pro/admin/views/settings-updates.php:93
+msgid "Yes"
+msgstr "Ja"
+
+#: admin/field-group.php:255
+#: admin/views/field-group-field-conditional-logic.php:41
+#: admin/views/field-group-field.php:135 fields/message.php:117
+#: fields/page_link.php:555 fields/page_link.php:569
+#: fields/post_object.php:493 fields/post_object.php:507 fields/select.php:398
+#: fields/select.php:412 fields/select.php:426 fields/select.php:440
+#: fields/taxonomy.php:733 fields/user.php:378 fields/user.php:392
+#: fields/wysiwyg.php:385 pro/admin/views/settings-updates.php:103
+msgid "No"
+msgstr "Nee"
+
+#: admin/field-group.php:586
+msgid "Super Admin"
+msgstr "Super beheerder"
+
+#: admin/field-group.php:659 pro/admin/views/options-page.php:52
+msgid "Publish"
+msgstr "Publiceer"
+
+#: admin/field-group.php:660
+msgid "Pending Review"
+msgstr "Wachtend op goedkeuring"
+
+#: admin/field-group.php:661
+msgid "Draft"
+msgstr "Concept"
+
+#: admin/field-group.php:662
+msgid "Future"
+msgstr "Toekomst"
+
+#: admin/field-group.php:663
+msgid "Private"
+msgstr "Privé"
+
+#: admin/field-group.php:664
+msgid "Revision"
+msgstr "Revisie"
+
+#: admin/field-group.php:665
+msgid "Trash"
+msgstr "Afval"
+
+#: admin/field-group.php:729
+msgid "Front Page"
+msgstr "Hoofdpagina"
+
+#: admin/field-group.php:730
+msgid "Posts Page"
+msgstr "Berichten pagina"
+
+#: admin/field-group.php:731
+msgid "Top Level Page (parent of 0)"
+msgstr "Hoofdpagina (ouder dan 0)"
+
+#: admin/field-group.php:732
+msgid "Parent Page (has children)"
+msgstr "Hoofdpagina (bevat subitems)"
+
+#: admin/field-group.php:733
+msgid "Child Page (has parent)"
+msgstr "Subpagina"
+
+#: admin/field-group.php:749
+msgid "Default Template"
+msgstr "Standaard template"
+
+#: admin/field-group.php:771 admin/field-group.php:779
+#: admin/field-group.php:793 admin/field-group.php:800
+#: admin/field-group.php:815 admin/field-group.php:825 fields/file.php:234
+#: fields/image.php:223 pro/fields/gallery.php:665
+msgid "All"
+msgstr "Alles"
+
+#: admin/field-group.php:780
+msgid "Add / Edit"
+msgstr "Toevoegen / Bewerken"
+
+#: admin/field-group.php:781
+msgid "Register"
+msgstr "Registreer"
+
+#: admin/field-group.php:1012
+msgid "Move Complete."
+msgstr "Verplaatsen geslaagd."
+
+#: admin/field-group.php:1013
+#, php-format
+msgid "The %s field can now be found in the %s field group"
+msgstr "Het veld: %s bevindt zich nu in de groep: %s"
+
+#: admin/field-group.php:1015
+msgid "Close Window"
+msgstr "Venster sluiten"
+
+#: admin/field-group.php:1050
+msgid "Please select the destination for this field"
+msgstr "Selecteer de bestemming voor dit veld"
+
+#: admin/field-group.php:1057
+msgid "Move Field"
+msgstr "Veld verplaatsen"
+
+#: admin/field-groups.php:109
+#, php-format
+msgid "Field group duplicated. %s"
+msgstr "Groep gedupliceerd. %s"
+
+#: admin/field-groups.php:113
+#, php-format
+msgid "%s field group duplicated."
+msgid_plural "%s field groups duplicated."
+msgstr[0] "%s groep gedupliceerd."
+msgstr[1] "%s groepen gedupliceerd."
+
+#: admin/field-groups.php:195
+#, php-format
+msgid "Field group synchronised. %s"
+msgstr "Groep gesynchroniseerd. %s"
+
+#: admin/field-groups.php:199
+#, php-format
+msgid "%s field group synchronised."
+msgid_plural "%s field groups synchronised."
+msgstr[0] "%s groep gesynchroniseerd."
+msgstr[1] "%s groepen gesynchroniseerd."
+
+#: admin/field-groups.php:370
+msgid "Sync available"
+msgstr "Synchronisatie beschikbaar"
+
+#: admin/field-groups.php:486
+msgid "Title"
+msgstr "Titel"
+
+#: admin/field-groups.php:544 admin/settings-info.php:76
+#: pro/admin/views/settings-updates.php:111
+msgid "Changelog"
+msgstr "Wat is er nieuw?"
+
+#: admin/field-groups.php:545
+msgid "See what's new in"
+msgstr "Bekijk alle vernieuwingen en verbeteringen van"
+
+#: admin/field-groups.php:545
+msgid "version"
+msgstr "versie"
+
+#: admin/field-groups.php:547
+msgid "Resources"
+msgstr "Documentatie (Engels)"
+
+#: admin/field-groups.php:549
+msgid "Getting Started"
+msgstr "Aan de slag"
+
+#: admin/field-groups.php:550 pro/admin/settings-updates.php:51
+#: pro/admin/views/settings-updates.php:17
+msgid "Updates"
+msgstr "Updates"
+
+#: admin/field-groups.php:551
+msgid "Field Types"
+msgstr "Veld soorten"
+
+#: admin/field-groups.php:552
+msgid "Functions"
+msgstr "Functies"
+
+#: admin/field-groups.php:553
+msgid "Actions"
+msgstr "Acties"
+
+#: admin/field-groups.php:554 fields/relationship.php:773
+msgid "Filters"
+msgstr "Filters"
+
+#: admin/field-groups.php:555
+msgid "'How to' guides"
+msgstr "Veelgestelde vragen"
+
+#: admin/field-groups.php:556
+msgid "Tutorials"
+msgstr "Tutorials"
+
+#: admin/field-groups.php:561
+msgid "Created by"
+msgstr "Ontwikkeld door"
+
+#: admin/field-groups.php:596
+msgid "Duplicate this item"
+msgstr "Dupliceer dit item"
+
+#: admin/field-groups.php:596 admin/field-groups.php:605
+#: admin/views/field-group-field.php:55 pro/fields/flexible-content.php:520
+msgid "Duplicate"
+msgstr "Dupliceer"
+
+#: admin/field-groups.php:635
+#, php-format
+msgid "Select %s"
+msgstr "Selecteer %s"
+
+#: admin/field-groups.php:641
+msgid "Synchronise field group"
+msgstr "Synchroniseer groep"
+
+#: admin/field-groups.php:641 admin/field-groups.php:656
+msgid "Sync"
+msgstr "Synchroniseer"
+
+#: admin/settings-addons.php:51 admin/views/settings-addons.php:9
+msgid "Add-ons"
+msgstr "Add-ons"
+
+#: admin/settings-addons.php:87
+msgid "<b>Error</b>. Could not load add-ons list"
+msgstr "<b>Fout</b>. Kan add-ons lijst niet laden"
+
+#: admin/settings-export.php:54 admin/views/settings-export-generate.php:9
+#: admin/views/settings-export.php:3
+msgid "Import / Export"
+msgstr "Importeer / Exporteer"
+
+#: admin/settings-export.php:147 admin/settings-export.php:361
+msgid "No field groups selected"
+msgstr "Geen groepen geselecteerd"
+
+#: admin/settings-export.php:184
+msgid "No file selected"
+msgstr "Geen bestanden geselecteerd"
+
+#: admin/settings-export.php:197
+msgid "Error uploading file. Please try again"
+msgstr "Fout bij het uploaden van bestand. Probeer het nog eens"
+
+#: admin/settings-export.php:206
+msgid "Incorrect file type"
+msgstr "Ongeldig bestandstype"
+
+#: admin/settings-export.php:223
+msgid "Import file empty"
+msgstr "Importeer bestand is leeg"
+
+#: admin/settings-export.php:319
+#, php-format
+msgid "<b>Success</b>. Import tool added %s field groups: %s"
+msgstr ""
+"<b>Gelukt!</b>. De importeer tool heeft %s velden en %s groepen geïmporteerd"
+
+#: admin/settings-export.php:328
+#, php-format
+msgid ""
+"<b>Warning</b>. Import tool detected %s field groups already exist and have "
+"been ignored: %s"
+msgstr ""
+"<b>Waarschuwing</b>. De importeer functie heeft %s bestaande veldgroepen "
+"gedetecteerd en heeft deze genegeerd: %s"
+
+#: admin/settings-info.php:50
+msgid "Info"
+msgstr "Informatie"
+
+#: admin/settings-info.php:75
+msgid "What's New"
+msgstr "Wat is er nieuw"
+
+#: admin/update.php:131
+msgid "Upgrade"
+msgstr "Upgrade"
+
+#: admin/views/field-group-field-conditional-logic.php:29
+msgid "Conditional Logic"
+msgstr "Conditionele logica"
+
+#: admin/views/field-group-field-conditional-logic.php:65
+msgid "Show this field if"
+msgstr "Toon dit veld als"
+
+#: admin/views/field-group-field-conditional-logic.php:111
+#: admin/views/field-group-locations.php:89
+msgid "is equal to"
+msgstr "gelijk is aan"
+
+#: admin/views/field-group-field-conditional-logic.php:112
+#: admin/views/field-group-locations.php:90
+msgid "is not equal to"
+msgstr "is niet gelijk aan"
+
+#: admin/views/field-group-field-conditional-logic.php:149
+#: admin/views/field-group-locations.php:119
+msgid "and"
+msgstr "en"
+
+#: admin/views/field-group-field-conditional-logic.php:164
+#: admin/views/field-group-locations.php:134
+msgid "Add rule group"
+msgstr "Nieuwe groep toevoegen"
+
+#: admin/views/field-group-field.php:51 admin/views/field-group-field.php:54
+msgid "Edit field"
+msgstr "Bewerk veld"
+
+#: admin/views/field-group-field.php:54 pro/fields/gallery.php:353
+msgid "Edit"
+msgstr "Bewerk"
+
+#: admin/views/field-group-field.php:55
+msgid "Duplicate field"
+msgstr "Dupliceer veld"
+
+#: admin/views/field-group-field.php:56
+msgid "Move field to another group"
+msgstr "Verplaats veld naar een andere groep"
+
+#: admin/views/field-group-field.php:56
+msgid "Move"
+msgstr "Verplaats"
+
+#: admin/views/field-group-field.php:57
+msgid "Delete field"
+msgstr "Verwijder veld"
+
+#: admin/views/field-group-field.php:57 pro/fields/flexible-content.php:519
+msgid "Delete"
+msgstr "Verwijder"
+
+#: admin/views/field-group-field.php:65 fields/oembed.php:214
+msgid "Error"
+msgstr "Fout"
+
+#: admin/views/field-group-field.php:65
+msgid "Field type does not exist"
+msgstr "Veld type bestaat niet"
+
+#: admin/views/field-group-field.php:78
+msgid "Field Label"
+msgstr "Veld label"
+
+#: admin/views/field-group-field.php:79
+msgid "This is the name which will appear on the EDIT page"
+msgstr "De naam die verschijnt op het edit screen"
+
+#: admin/views/field-group-field.php:90
+msgid "Field Name"
+msgstr "Veld naam"
+
+#: admin/views/field-group-field.php:91
+msgid "Single word, no spaces. Underscores and dashes allowed"
+msgstr "Enkel woord, geen spaties. (Liggende) streepjes toegestaan."
+
+#: admin/views/field-group-field.php:102 fields/taxonomy.php:707
+msgid "Field Type"
+msgstr "Soort veld"
+
+#: admin/views/field-group-field.php:115 fields/tab.php:109
+msgid "Instructions"
+msgstr "Instructies"
+
+#: admin/views/field-group-field.php:116
+msgid "Instructions for authors. Shown when submitting data"
+msgstr "Toelichting voor gebruikers. Wordt getoond bij invullen van het veld."
+
+#: admin/views/field-group-field.php:127
+msgid "Required?"
+msgstr "Verplicht?"
+
+#: admin/views/field-group-field.php:151
+msgid "Wrapper Attributes"
+msgstr "Veld-attributen"
+
+#: admin/views/field-group-field.php:157
+msgid "width"
+msgstr "Breedte"
+
+#: admin/views/field-group-field.php:171
+msgid "class"
+msgstr "class"
+
+#: admin/views/field-group-field.php:184
+msgid "id"
+msgstr "id"
+
+#: admin/views/field-group-field.php:196
+msgid "Close Field"
+msgstr "Veld sluiten"
+
+#: admin/views/field-group-fields.php:29
+msgid "Order"
+msgstr "Volgorde"
+
+#: admin/views/field-group-fields.php:30 pro/fields/flexible-content.php:545
+msgid "Label"
+msgstr "Label"
+
+#: admin/views/field-group-fields.php:31 pro/fields/flexible-content.php:558
+msgid "Name"
+msgstr "Naam"
+
+#: admin/views/field-group-fields.php:32
+msgid "Type"
+msgstr "Soort"
+
+#: admin/views/field-group-fields.php:44
+msgid ""
+"No fields. Click the <strong>+ Add Field</strong> button to create your "
+"first field."
+msgstr ""
+"Geen velden. Klik op <strong>+ Nieuw veld</strong> button om je eerste veld "
+"te maken."
+
+#: admin/views/field-group-fields.php:51
+msgid "Drag and drop to reorder"
+msgstr "Sleep om te sorteren"
+
+#: admin/views/field-group-fields.php:54
+msgid "+ Add Field"
+msgstr "+ Nieuw veld"
+
+#: admin/views/field-group-locations.php:5
+msgid "Rules"
+msgstr "Regels"
+
+#: admin/views/field-group-locations.php:6
+msgid ""
+"Create a set of rules to determine which edit screens will use these "
+"advanced custom fields"
+msgstr ""
+"Maak regels aan om te bepalen op welke edit screen jouw extra velden "
+"verschijnen"
+
+#: admin/views/field-group-locations.php:21
+msgid "Show this field group if"
+msgstr "Toon deze groep als"
+
+#: admin/views/field-group-locations.php:41 core/field.php:130
+msgid "Basic"
+msgstr "Basis"
+
+#: admin/views/field-group-locations.php:42 fields/relationship.php:779
+msgid "Post Type"
+msgstr "Post type"
+
+#: admin/views/field-group-locations.php:43
+msgid "Logged in User Type"
+msgstr "Gebruikersrol"
+
+#: admin/views/field-group-locations.php:45
+#: admin/views/field-group-locations.php:46
+msgid "Post"
+msgstr "Bericht"
+
+#: admin/views/field-group-locations.php:47
+msgid "Post Category"
+msgstr "Bericht categorie"
+
+#: admin/views/field-group-locations.php:48
+msgid "Post Format"
+msgstr "Bericht format"
+
+#: admin/views/field-group-locations.php:49
+msgid "Post Status"
+msgstr "Status"
+
+#: admin/views/field-group-locations.php:50
+msgid "Post Taxonomy"
+msgstr "Bericht taxonomy"
+
+#: admin/views/field-group-locations.php:52
+#: admin/views/field-group-locations.php:53
+msgid "Page"
+msgstr "Pagina"
+
+#: admin/views/field-group-locations.php:54
+msgid "Page Type"
+msgstr "Pagina type"
+
+#: admin/views/field-group-locations.php:55
+msgid "Page Parent"
+msgstr "Pagina hoofd"
+
+#: admin/views/field-group-locations.php:56
+msgid "Page Template"
+msgstr "Pagina template"
+
+#: admin/views/field-group-locations.php:58 fields/user.php:36
+msgid "User"
+msgstr "Gebruiker"
+
+#: admin/views/field-group-locations.php:59
+msgid "User Form"
+msgstr "Gebruiker formulier"
+
+#: admin/views/field-group-locations.php:60
+msgid "User Role"
+msgstr "Rol"
+
+#: admin/views/field-group-locations.php:62 pro/admin/options-page.php:55
+msgid "Forms"
+msgstr "Formulieren"
+
+#: admin/views/field-group-locations.php:63
+msgid "Attachment"
+msgstr "Bijlage"
+
+#: admin/views/field-group-locations.php:64
+msgid "Taxonomy Term"
+msgstr "Taxonomy term"
+
+#: admin/views/field-group-locations.php:65
+msgid "Comment"
+msgstr "Reactie"
+
+#: admin/views/field-group-locations.php:66
+msgid "Widget"
+msgstr "Widget"
+
+#: admin/views/field-group-options.php:10
+msgid "Order No."
+msgstr "Volgorde nummer"
+
+#: admin/views/field-group-options.php:11
+msgid "Field groups are created in order <br />from lowest to highest"
+msgstr "Groepen worden gesorteerd van laag naar hoog."
+
+#: admin/views/field-group-options.php:21
+msgid "Position"
+msgstr "Positie"
+
+#: admin/views/field-group-options.php:28
+msgid "High (after title)"
+msgstr "Hoog (onder titel)"
+
+#: admin/views/field-group-options.php:29
+msgid "Normal (after content)"
+msgstr "Normaal (onder tekstverwerker)"
+
+#: admin/views/field-group-options.php:30
+msgid "Side"
+msgstr "Zijkant"
+
+#: admin/views/field-group-options.php:38
+msgid "Style"
+msgstr "Stijl"
+
+#: admin/views/field-group-options.php:45
+msgid "Standard (WP metabox)"
+msgstr "Standaard (WordPress metabox)"
+
+#: admin/views/field-group-options.php:46
+msgid "Seamless (no metabox)"
+msgstr "Naadloos (zonder WordPress metabox)"
+
+#: admin/views/field-group-options.php:53
+msgid "Label placement"
+msgstr "Label positionering"
+
+#: admin/views/field-group-options.php:60 fields/tab.php:125
+msgid "Top aligned"
+msgstr "Boven velden"
+
+#: admin/views/field-group-options.php:61 fields/tab.php:126
+msgid "Left Aligned"
+msgstr "Links naast velden"
+
+#: admin/views/field-group-options.php:68
+msgid "Instruction placement"
+msgstr "Instructie positionering"
+
+#: admin/views/field-group-options.php:75
+msgid "Below labels"
+msgstr "Onder label"
+
+#: admin/views/field-group-options.php:76
+msgid "Below fields"
+msgstr "Onder veld"
+
+#: admin/views/field-group-options.php:83
+msgid "Hide on screen"
+msgstr "Verberg elementen"
+
+#: admin/views/field-group-options.php:84
+msgid "<b>Select</b> items to <b>hide</b> them from the edit screen"
+msgstr ""
+"<b>Selecteer</b> elementen die <b>verborgen</b> worden op het edit screen"
+
+#: admin/views/field-group-options.php:84
+msgid ""
+"If multiple field groups appear on an edit screen, the first field group's "
+"options will be used. (the one with the lowest order number)"
+msgstr ""
+"Als er meerdere groepen verschijnen op een edit screen, zal de eerste groep "
+"worden gebruikt. (degene met het laagste volgorde nummer)"
+
+#: admin/views/field-group-options.php:90
+msgid "Permalink"
+msgstr "Permalink"
+
+#: admin/views/field-group-options.php:91
+msgid "Content Editor"
+msgstr "Content editor"
+
+#: admin/views/field-group-options.php:92
+msgid "Excerpt"
+msgstr "Samenvatting"
+
+#: admin/views/field-group-options.php:94
+msgid "Discussion"
+msgstr "Reageren"
+
+#: admin/views/field-group-options.php:95
+msgid "Comments"
+msgstr "Reacties"
+
+#: admin/views/field-group-options.php:96
+msgid "Revisions"
+msgstr "Revisies"
+
+#: admin/views/field-group-options.php:97
+msgid "Slug"
+msgstr "Slug"
+
+#: admin/views/field-group-options.php:98
+msgid "Author"
+msgstr "Auteur"
+
+#: admin/views/field-group-options.php:99
+msgid "Format"
+msgstr "Format"
+
+#: admin/views/field-group-options.php:100
+msgid "Page Attributes"
+msgstr "Pagina-attributen"
+
+#: admin/views/field-group-options.php:101 fields/relationship.php:792
+msgid "Featured Image"
+msgstr "Uitgelichte afbeelding"
+
+#: admin/views/field-group-options.php:102
+msgid "Categories"
+msgstr "Categorieën"
+
+#: admin/views/field-group-options.php:103
+msgid "Tags"
+msgstr "Tags"
+
+#: admin/views/field-group-options.php:104
+msgid "Send Trackbacks"
+msgstr "Trackbacks verzenden"
+
+#: admin/views/settings-addons.php:23
+msgid "Download & Install"
+msgstr "Download & installeer"
+
+#: admin/views/settings-addons.php:42
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+#: admin/views/settings-export-generate.php:13
+msgid "Export Field Groups to PHP"
+msgstr "Exporteer groep(en) naar PHP"
+
+#: admin/views/settings-export-generate.php:17
+msgid ""
+"The following code can be used to register a local version of the selected "
+"field group(s). A local field group can provide many benefits such as faster "
+"load times, version control & dynamic fields/settings. Simply copy and paste "
+"the following code to your theme's functions.php file or include it within "
+"an external file."
+msgstr ""
+"De volgende code kun je integreren in je thema. Door de groep(en) te "
+"integreren verhoog je de laadsnelheid. Kopieer en plak deze in code in "
+"functions.php, of maak een nieuw PHP bestand aan."
+
+#: admin/views/settings-export.php:7
+msgid "Export Field Groups"
+msgstr "Exporteer groepen"
+
+#: admin/views/settings-export.php:10
+msgid ""
+"Select the field groups you would like to export and then select your export "
+"method. Use the download button to export to a .json file which you can then "
+"import to another ACF installation. Use the generate button to export to PHP "
+"code which you can place in your theme."
+msgstr ""
+"Selecteer de groepen die je wilt exporteren. Maak vervolgens de keuze om de "
+"groepen te downloaden als JSON bestand, of genereer de export code in PHP "
+"formaat. De PHP export code kun je integreren in je thema."
+
+#: admin/views/settings-export.php:20
+msgid "Select Field Groups"
+msgstr "Selecteer groepen"
+
+#: admin/views/settings-export.php:55
+msgid "Download export file"
+msgstr "Download export bestand"
+
+#: admin/views/settings-export.php:56
+msgid "Generate export code"
+msgstr "Genereer export code"
+
+#: admin/views/settings-export.php:69
+msgid "Toggle All"
+msgstr "Selecteer alle"
+
+#: admin/views/settings-export.php:93
+msgid "Import Field Groups"
+msgstr "Importeer groepen"
+
+#: admin/views/settings-export.php:96
+msgid ""
+"Select the Advanced Custom Fields JSON file you would like to import. When "
+"you click the import button below, ACF will import the field groups."
+msgstr ""
+"Selecteer het Advanced Custom Fields JSON bestand die je wilt importeren. "
+"Klik op de importeer button om het importeren te starten."
+
+#: admin/views/settings-export.php:106 fields/file.php:46
+msgid "Select File"
+msgstr "Selecteer bestand"
+
+#: admin/views/settings-export.php:115
+msgid "Import"
+msgstr "Importeer"
+
+#: admin/views/settings-info.php:9
+msgid "Welcome to Advanced Custom Fields"
+msgstr "Welkom bij Advanced Custom Fields"
+
+#: admin/views/settings-info.php:10
+#, php-format
+msgid ""
+"Thank you for updating! ACF %s is bigger and better than ever before. We "
+"hope you like it."
+msgstr ""
+"Bedankt voor het updaten! ACF %s is groter dan ooit tevoren. We hopen dat je "
+"tevreden bent."
+
+#: admin/views/settings-info.php:25
+msgid "A smoother custom field experience"
+msgstr "Een verbeterde extra veld beleving"
+
+#: admin/views/settings-info.php:30
+msgid "Improved Usability"
+msgstr "Gebruikersvriendelijker"
+
+#: admin/views/settings-info.php:31
+msgid ""
+"Including the popular Select2 library has improved both usability and speed "
+"across a number of field types including post object, page link, taxonomy "
+"and select."
+msgstr ""
+"Inclusief de populaire Select2 bibliotheek, die zowel "
+"gebruikersvriendelijker als sneller werkt bij velden als post object, pagina "
+"link, taxonomy en selecteer."
+
+#: admin/views/settings-info.php:35
+msgid "Improved Design"
+msgstr "Verbeterd Design"
+
+#: admin/views/settings-info.php:36
+msgid ""
+"Many fields have undergone a visual refresh to make ACF look better than "
+"ever! Noticeable changes are seen on the gallery, relationship and oEmbed "
+"(new) fields!"
+msgstr ""
+"Vele velden hebben een make-over gekregen. Nu oogt ACF beter dan ooit! "
+"Merkwaardige verschillen vindt je onder andere terug bij de galerij, relatie "
+"en oEmbed velden!"
+
+#: admin/views/settings-info.php:40
+msgid "Improved Data"
+msgstr "Verbeterde data"
+
+#: admin/views/settings-info.php:41
+msgid ""
+"Redesigning the data architecture has allowed sub fields to live "
+"independently from their parents. This allows you to drag and drop fields in "
+"and out of parent fields!"
+msgstr ""
+"Het herontwerp van de dataverwerking zorgt ervoor dat velden los van hun "
+"hoofdvelden kunnen functioneren. Hiermee wordt het mogelijk om velden te "
+"drag-and-droppen tussen hoofdvelden."
+
+#: admin/views/settings-info.php:47
+msgid "Goodbye Add-ons. Hello PRO"
+msgstr "Vaarwel Add-ons. Hallo PRO!"
+
+#: admin/views/settings-info.php:52
+msgid "Introducing ACF PRO"
+msgstr "ACF PRO"
+
+#: admin/views/settings-info.php:53
+msgid ""
+"We're changing the way premium functionality is delivered in an exiting way!"
+msgstr "We hebben de premium mogelijkheden vernieuwd op een geweldige manier!"
+
+#: admin/views/settings-info.php:54
+#, php-format
+msgid ""
+"All 4 premium add-ons have been combined into a new <a href=\"%s\">Pro "
+"version of ACF</a>. With both personal and developer licenses available, "
+"premium functionality is more affordable and accessible than ever before!"
+msgstr ""
+"Alle 4 de premium add-ons zijn samengevoegd tot een <a href=\"%s\">PRO "
+"versie van ACF</a>. Er zijn zowel persoonlijke als developer licenties "
+"verkrijgbaar tegen een aantrekkelijke prijs!"
+
+#: admin/views/settings-info.php:58
+msgid "Powerful Features"
+msgstr "Krachtige functies"
+
+#: admin/views/settings-info.php:59
+msgid ""
+"ACF PRO contains powerful features such as repeatable data, flexible content "
+"layouts, a beautiful gallery field and the ability to create extra admin "
+"options pages!"
+msgstr ""
+"ACF PRO beschikt over krachtige velden en functies zoals: herhaalbare "
+"velden, flexibile content layouts, een interactieve fotogalerij veld en de "
+"mogelijkheid om optie pagina's aan te maken!"
+
+#: admin/views/settings-info.php:60
+#, php-format
+msgid "Read more about <a href=\"%s\">ACF PRO features</a>."
+msgstr "Lees meer over de <a href=\"%s\">ACF PRO functionaliteiten</a>."
+
+#: admin/views/settings-info.php:64
+msgid "Easy Upgrading"
+msgstr "Gemakkelijk upgraden"
+
+#: admin/views/settings-info.php:65
+#, php-format
+msgid ""
+"To help make upgrading easy, <a href=\"%s\">login to your store account</a> "
+"and claim a free copy of ACF PRO!"
+msgstr ""
+"Om upgraden gemakkelijk te maken kun je <a href=\"%s\">inloggen met je "
+"bestaande winkelaccount</a> en een gratis versie van ACF PRO claimen!"
+
+#: admin/views/settings-info.php:66
+#, php-format
+msgid ""
+"We also wrote an <a href=\"%s\">upgrade guide</a> to answer any questions, "
+"but if you do have one, please contact our support team via the <a href=\"%s"
+"\">help desk</a>"
+msgstr ""
+"We hebben een speciale <a href=\"%s\">upgrade gids</a> gemaakt om al je "
+"vraagstukken te beantwoorden. Indien je een uitgebreidere vraag hebt, kun je "
+"contact opnemen met de <a href=\"%s\">helpdesk</a> (Engelstalig)."
+
+#: admin/views/settings-info.php:74
+msgid "Under the Hood"
+msgstr "Onder de motorkap"
+
+#: admin/views/settings-info.php:79
+msgid "Smarter field settings"
+msgstr "Slimmere veld instellingen"
+
+#: admin/views/settings-info.php:80
+msgid "ACF now saves its field settings as individual post objects"
+msgstr "ACF slaat velden als individuele post objecten op"
+
+#: admin/views/settings-info.php:84
+msgid "More AJAX"
+msgstr "Meer AJAX"
+
+#: admin/views/settings-info.php:85
+msgid "More fields use AJAX powered search to speed up page loading"
+msgstr ""
+"Steeds meer velden maken gebruik van AJAX gestuurde zoekopdrachten. Dit "
+"maakt het laden een stuk sneller"
+
+#: admin/views/settings-info.php:89
+msgid "Local JSON"
+msgstr "Local JSON"
+
+#: admin/views/settings-info.php:90
+msgid "New auto export to JSON feature improves speed"
+msgstr "Het automatisch exporteren naar JSON maakt alles een stuk sneller"
+
+#: admin/views/settings-info.php:94
+msgid "Better version control"
+msgstr "Betere versie controles"
+
+#: admin/views/settings-info.php:95
+msgid ""
+"New auto export to JSON feature allows field settings to be version "
+"controlled"
+msgstr ""
+"Nieuw is het automatisch exporteren naar JSON. Dit voorkomt problemen "
+"tijdens het upgraden van ACF."
+
+#: admin/views/settings-info.php:99
+msgid "Swapped XML for JSON"
+msgstr "XML is vervangen door JSON"
+
+#: admin/views/settings-info.php:100
+msgid "Import / Export now uses JSON in favour of XML"
+msgstr ""
+"Importeren / Exporteren gaat nu via JSON. Indien gewenst kan er XML worden "
+"gebruikt"
+
+#: admin/views/settings-info.php:104
+msgid "New Forms"
+msgstr "Nieuwe formulieren"
+
+#: admin/views/settings-info.php:105
+msgid "Fields can now be mapped to comments, widgets and all user forms!"
+msgstr ""
+"Velden kunnen nu worden toegewezen aan reacties, widgets en "
+"gebruikersformulieren!"
+
+#: admin/views/settings-info.php:110
+msgid "A new field for embedding content has been added"
+msgstr "Een nieuw veld voor het embedden van content is toegevoegd"
+
+#: admin/views/settings-info.php:114
+msgid "New Gallery"
+msgstr "Nieuwe galerij"
+
+#: admin/views/settings-info.php:115
+msgid "The gallery field has undergone a much needed facelift"
+msgstr "Het galerij veld heeft een complete facelift ondergaan"
+
+#: admin/views/settings-info.php:119
+msgid "New Settings"
+msgstr "Nieuwe instellingen"
+
+#: admin/views/settings-info.php:120
+msgid ""
+"Field group settings have been added for label placement and instruction "
+"placement"
+msgstr ""
+"Nieuwe groep instellingen zijn toegevoegd om label en instructies toe te "
+"voegen"
+
+#: admin/views/settings-info.php:124
+msgid "Better Front End Forms"
+msgstr "Betere front-end formulieren"
+
+#: admin/views/settings-info.php:125
+msgid "acf_form() can now create a new post on submission"
+msgstr "acf_form() kan nu posts aanmaken/toevoegen na goedkeuring"
+
+#: admin/views/settings-info.php:129
+msgid "Better Validation"
+msgstr "Betere validatie"
+
+#: admin/views/settings-info.php:130
+msgid "Form validation is now done via PHP + AJAX in favour of only JS"
+msgstr ""
+"Formulier validatie gaat nu via PHP + AJAX. Indien gewenst kan dit ook via JS"
+
+#: admin/views/settings-info.php:134
+msgid "Relationship Field"
+msgstr "Relatie veld"
+
+#: admin/views/settings-info.php:135
+msgid ""
+"New Relationship field setting for 'Filters' (Search, Post Type, Taxonomy)"
+msgstr ""
+"Nieuwe relatieveld instellingen voor filters (Zoeken, Post Type en Taxonomy)"
+
+#: admin/views/settings-info.php:139
+msgid "Moving Fields"
+msgstr "Velden verplaatsen"
+
+#: admin/views/settings-info.php:140
+msgid ""
+"New field group functionality allows you to move a field between groups & "
+"parents"
+msgstr ""
+"Nieuwe veld groep functionaliteiten laat je velden tussen groepen "
+"verplaatsen."
+
+#: admin/views/settings-info.php:144 fields/page_link.php:36
+msgid "Page Link"
+msgstr "Pagina link"
+
+#: admin/views/settings-info.php:145
+msgid "New archives group in page_link field selection"
+msgstr "Nieuwe archief groep in pagina_link veld"
+
+#: admin/views/settings-info.php:149
+msgid "Better Options Pages"
+msgstr "Verbeterde optie pagina's"
+
+#: admin/views/settings-info.php:150
+msgid ""
+"New functions for options page allow creation of both parent and child menu "
+"pages"
+msgstr ""
+"De opties pagina's kunnen nu worden voorzien van zowel hoofd als sub-pagina's"
+
+#: admin/views/settings-info.php:158
+#, php-format
+msgid "We think you'll love the changes in %s."
+msgstr ""
+"Wij denken dat u de wijzigingen en vernieuwingen zult waarderen in versie %s."
+
+#: admin/views/update-notice.php:22
+msgid "ACF PRO Required"
+msgstr "ACF PRO verplicht"
+
+#: admin/views/update-notice.php:24 admin/views/update-notice.php:36
+#, php-format
+msgid "Thank you for updating to %s v%s!"
+msgstr "Bedankt voor het updaten naar %s v%s!"
+
+#: admin/views/update-notice.php:26
+#, php-format
+msgid ""
+"We have detected an issue which requires your attention: This website makes "
+"use of premium add-ons (%s) which are no longer compatible with ACF."
+msgstr ""
+"We hebben een probleem ontdekt die uw aandacht vereist: Deze website maakt "
+"gebruik van add-ons (%s) die niet compatible zijn met de huidige versie van "
+"ACF."
+
+#: admin/views/update-notice.php:28
+msgid ""
+"Don't panic, you can simply roll back the plugin and continue using ACF as "
+"you know it!"
+msgstr ""
+"Geen paniek! Je kunt gemakkelijk downgraden naar een vorige versie van ACF."
+
+#: admin/views/update-notice.php:30
+#, php-format
+msgid "Roll back to ACF v%s"
+msgstr "Downgrade naar ACF v%s"
+
+#: admin/views/update-notice.php:30
+msgid "Learn why ACF PRO is required for my site"
+msgstr "Ontdek waarom je niet zonder ACF PRO kunt"
+
+#: admin/views/update-notice.php:34
+msgid "Database Upgrade Required"
+msgstr "Database upgrade vereist"
+
+#: admin/views/update-notice.php:36
+msgid ""
+"Before you start using the new awesome features, please update your database "
+"to the newest version."
+msgstr ""
+"Voordat je aan de slag kunt met de geweldige nieuwe functies, is een "
+"database update vereist."
+
+#: admin/views/update-notice.php:38
+msgid "Update Database"
+msgstr "Database updaten"
+
+#: admin/views/update-notice.php:45
+msgid ""
+"It is strongly recommended that you backup your database before proceeding. "
+"Are you sure you wish to run the updater now?"
+msgstr ""
+"Het is aan te raden om eerst een backup van de database te maken voordat je "
+"de update uitvoert. Weet je zeker dat je de update nu wilt uitvoeren?"
+
+#: admin/views/update.php:9
+msgid "Data Upgrade"
+msgstr "Data geüpgrade"
+
+#: admin/views/update.php:13
+msgid "Reading upgrade tasks..."
+msgstr "Upgrade taken lezen..."
+
+#: admin/views/update.php:19
+#, php-format
+msgid "Upgrading data to version %s"
+msgstr "Bezig met upgraden naar versie %s"
+
+#: admin/views/update.php:25
+msgid "Data upgraded successfully."
+msgstr "Data is met succes geüpgraded."
+
+#: admin/views/update.php:27
+msgid "See what's new"
+msgstr "Bekijk alle vernieuwingen en verbeteringen van"
+
+#: admin/views/update.php:31
+msgid "Data is at the latest version."
+msgstr "Data beschikt over de laatste versie."
+
+#: api/api-helpers.php:1198
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: api/api-helpers.php:1199
+msgid "Medium"
+msgstr "Gemiddeld"
+
+#: api/api-helpers.php:1200
+msgid "Large"
+msgstr "Groot"
+
+#: api/api-helpers.php:1248
+msgid "Full Size"
+msgstr "Volledige grootte"
+
+#: api/api-helpers.php:1806
+msgid "(no title)"
+msgstr "(geen titel)"
+
+#: api/api-template.php:1268 pro/fields/gallery.php:576
+msgid "Update"
+msgstr "Bijwerken"
+
+#: api/api-template.php:1269
+msgid "Post updated"
+msgstr "Bericht bijgewerkt"
+
+#: core/field.php:131
+msgid "Content"
+msgstr "Inhoud"
+
+#: core/field.php:132
+msgid "Choice"
+msgstr "Keuze"
+
+#: core/field.php:133
+msgid "Relational"
+msgstr "Relatie"
+
+#: core/field.php:134
+msgid "jQuery"
+msgstr "jQuery"
+
+#: core/field.php:135 fields/checkbox.php:187 fields/radio.php:231
+#: pro/fields/flexible-content.php:516 pro/fields/repeater.php:392
+msgid "Layout"
+msgstr "Layout"
+
+#: core/input.php:129
+msgid "Expand Details"
+msgstr "Toon details"
+
+#: core/input.php:130
+msgid "Collapse Details"
+msgstr "Verberg details"
+
+#: core/input.php:180
+msgid "Validation successful"
+msgstr "Validatie geslaagd"
+
+#: core/input.php:192
+msgid "Validation failed"
+msgstr "Validatie mislukt"
+
+#: core/input.php:199
+#, php-format
+msgid "1 required field below is empty"
+msgid_plural "%s required fields below are empty"
+msgstr[0] "1 verplicht veld is leeg"
+msgstr[1] "%s verplichte velden zijn leeg"
+
+#: core/input.php:535
+#, php-format
+msgid "%s value is required"
+msgstr "%s waarde is verplicht"
+
+#: core/media.php:84
+#, php-format
+msgid "Image width must be at least %dpx."
+msgstr "Afbeelding breedte moet tenminste %dpx zijn."
+
+#: core/media.php:89
+#, php-format
+msgid "Image width must not exceed %dpx."
+msgstr "Afbeelding mag niet breder zijn dan %dpx."
+
+#: core/media.php:104
+#, php-format
+msgid "Image height must be at least %dpx."
+msgstr "Afbeelding hoogte moet tenminste %dpx zijn."
+
+#: core/media.php:109
+#, php-format
+msgid "Image height must not exceed %dpx."
+msgstr "Afbeelding mag niet hoger zijn dan %dpx."
+
+#: core/media.php:125
+#, php-format
+msgid "File size must be at least %s."
+msgstr "Bestandsgrootte moet tenminste %s zijn."
+
+#: core/media.php:130
+#, php-format
+msgid "File size must must not exceed %s."
+msgstr "Bestand mag niet groter zijn dan %s."
+
+#: core/media.php:154
+#, php-format
+msgid "File type must be %s."
+msgstr "Bestandstype moet %s zijn."
+
+#: fields/checkbox.php:36 fields/taxonomy.php:714
+msgid "Checkbox"
+msgstr "Checkbox"
+
+#: fields/checkbox.php:169 fields/radio.php:193 fields/select.php:374
+msgid "Choices"
+msgstr "Keuzes"
+
+#: fields/checkbox.php:170 fields/radio.php:194 fields/select.php:375
+msgid "Enter each choice on a new line."
+msgstr "Per regel een keuze"
+
+#: fields/checkbox.php:170 fields/radio.php:194 fields/select.php:375
+msgid "For more control, you may specify both a value and label like this:"
+msgstr ""
+"Om meer controle te krijgen over de keuzes, kun je de naam en het label van "
+"elkaar scheiden. Dit doe je op de volgende manier:"
+
+#: fields/checkbox.php:170 fields/radio.php:194 fields/select.php:375
+msgid "red : Red"
+msgstr "rood : Rood"
+
+#: fields/checkbox.php:178 fields/color_picker.php:158 fields/email.php:124
+#: fields/number.php:150 fields/radio.php:222 fields/select.php:383
+#: fields/text.php:148 fields/textarea.php:145 fields/true_false.php:115
+#: fields/url.php:117 fields/wysiwyg.php:345
+msgid "Default Value"
+msgstr "Standaard waarde"
+
+#: fields/checkbox.php:179 fields/select.php:384
+msgid "Enter each default value on a new line"
+msgstr "Per regel de naam van een keuze"
+
+#: fields/checkbox.php:193 fields/radio.php:237
+msgid "Vertical"
+msgstr "Verticaal"
+
+#: fields/checkbox.php:194 fields/radio.php:238
+msgid "Horizontal"
+msgstr "Horizontaal"
+
+#: fields/color_picker.php:36
+msgid "Color Picker"
+msgstr "Kleurprikker"
+
+#: fields/color_picker.php:94
+msgid "Clear"
+msgstr "Wissen"
+
+#: fields/color_picker.php:95
+msgid "Default"
+msgstr "Standaard waarde"
+
+#: fields/color_picker.php:96
+msgid "Select Color"
+msgstr "Selecteer kleur"
+
+#: fields/date_picker.php:36
+msgid "Date Picker"
+msgstr "Datumprikker"
+
+#: fields/date_picker.php:72
+msgid "Done"
+msgstr "Gereed"
+
+#: fields/date_picker.php:73
+msgid "Today"
+msgstr "Vandaag"
+
+#: fields/date_picker.php:76
+msgid "Show a different month"
+msgstr "Toon een andere maand"
+
+#: fields/date_picker.php:149
+msgid "Display format"
+msgstr "Weergeven als"
+
+#: fields/date_picker.php:150
+msgid "The format displayed when editing a post"
+msgstr "De weergave tijdens het aanmaken/bewerken van een post"
+
+#: fields/date_picker.php:164
+msgid "Return format"
+msgstr "Output weergeven als"
+
+#: fields/date_picker.php:165
+msgid "The format returned via template functions"
+msgstr "De weergave in het thema"
+
+#: fields/date_picker.php:180
+msgid "Week Starts On"
+msgstr "Week start op"
+
+#: fields/email.php:36
+msgid "Email"
+msgstr "E-mail"
+
+#: fields/email.php:125 fields/number.php:151 fields/radio.php:223
+#: fields/text.php:149 fields/textarea.php:146 fields/url.php:118
+#: fields/wysiwyg.php:346
+msgid "Appears when creating a new post"
+msgstr ""
+"Vooraf ingevulde waarde die te zien is tijdens het aanmaken van een nieuwe "
+"post"
+
+#: fields/email.php:133 fields/number.php:159 fields/password.php:137
+#: fields/text.php:157 fields/textarea.php:154 fields/url.php:126
+msgid "Placeholder Text"
+msgstr "Plaatsvervangende tekst"
+
+#: fields/email.php:134 fields/number.php:160 fields/password.php:138
+#: fields/text.php:158 fields/textarea.php:155 fields/url.php:127
+msgid "Appears within the input"
+msgstr "Informatie die verschijnt in het veld (verdwijnt zodra je typt)"
+
+#: fields/email.php:142 fields/number.php:168 fields/password.php:146
+#: fields/text.php:166
+msgid "Prepend"
+msgstr "Voorvoegsel"
+
+#: fields/email.php:143 fields/number.php:169 fields/password.php:147
+#: fields/text.php:167
+msgid "Appears before the input"
+msgstr "Informatie die verschijnt voor het veld"
+
+#: fields/email.php:151 fields/number.php:177 fields/password.php:155
+#: fields/text.php:175
+msgid "Append"
+msgstr "Navoegsel"
+
+#: fields/email.php:152 fields/number.php:178 fields/password.php:156
+#: fields/text.php:176
+msgid "Appears after the input"
+msgstr "Informatie die verschijnt na het veld"
+
+#: fields/file.php:36
+msgid "File"
+msgstr "Bestand"
+
+#: fields/file.php:47
+msgid "Edit File"
+msgstr "Bewerk bestand"
+
+#: fields/file.php:48
+msgid "Update File"
+msgstr "Update bestand"
+
+#: fields/file.php:49 pro/fields/gallery.php:55
+msgid "uploaded to this post"
+msgstr "geüpload naar deze post"
+
+#: fields/file.php:141
+msgid "File Name"
+msgstr "Bestandsnaam"
+
+#: fields/file.php:145
+msgid "File Size"
+msgstr "Bestandsformaat"
+
+#: fields/file.php:168
+msgid "No File selected"
+msgstr "Geen bestand geselecteerd"
+
+#: fields/file.php:168
+msgid "Add File"
+msgstr "Voeg bestand toe"
+
+#: fields/file.php:213 fields/image.php:192 fields/taxonomy.php:751
+msgid "Return Value"
+msgstr "Output weergeven als"
+
+#: fields/file.php:214 fields/image.php:193
+msgid "Specify the returned value on front end"
+msgstr "Bepaal hier de output weergave"
+
+#: fields/file.php:219
+msgid "File Array"
+msgstr "Bestand Array"
+
+#: fields/file.php:220
+msgid "File URL"
+msgstr "Bestands-URL"
+
+#: fields/file.php:221
+msgid "File ID"
+msgstr "Bestands-ID"
+
+#: fields/file.php:228 fields/image.php:217 pro/fields/gallery.php:659
+msgid "Library"
+msgstr "Bibliotheek"
+
+#: fields/file.php:229 fields/image.php:218 pro/fields/gallery.php:660
+msgid "Limit the media library choice"
+msgstr ""
+"Limiteer de keuze van bestanden. Kies voor de gehele media bibliotheek, of "
+"alleen de bestanden die geüpload zijn naar de post."
+
+#: fields/file.php:235 fields/image.php:224 pro/fields/gallery.php:666
+msgid "Uploaded to post"
+msgstr "Geüpload naar post"
+
+#: fields/file.php:242 fields/image.php:231 pro/fields/gallery.php:673
+msgid "Minimum"
+msgstr "Minimaal"
+
+#: fields/file.php:243 fields/file.php:254
+msgid "Restrict which files can be uploaded"
+msgstr "Bepaal welke bestanden geüpload mogen worden"
+
+#: fields/file.php:246 fields/file.php:257 fields/image.php:254
+#: fields/image.php:287 pro/fields/gallery.php:696 pro/fields/gallery.php:729
+msgid "File size"
+msgstr "Bestandsgrootte"
+
+#: fields/file.php:253 fields/image.php:264 pro/fields/gallery.php:706
+msgid "Maximum"
+msgstr "Maximaal"
+
+#: fields/file.php:264 fields/image.php:297 pro/fields/gallery.php:739
+msgid "Allowed file types"
+msgstr "Toegestane bestandstypen"
+
+#: fields/file.php:265 fields/image.php:298 pro/fields/gallery.php:740
+msgid "Comma separated list. Leave blank for all types"
+msgstr "Met komma's gescheiden lijst. Laat leeg voor alle types."
+
+#: fields/google-map.php:36
+msgid "Google Map"
+msgstr "Google Map"
+
+#: fields/google-map.php:51
+msgid "Locating"
+msgstr "Locatie wordt gezocht..."
+
+#: fields/google-map.php:52
+msgid "Sorry, this browser does not support geolocation"
+msgstr "Excuses, deze browser ondersteund geen geolocatie"
+
+#: fields/google-map.php:135
+msgid "Clear location"
+msgstr "Wis locatie"
+
+#: fields/google-map.php:142
+msgid "Find current location"
+msgstr "Zoek huidige locatie"
+
+#: fields/google-map.php:145
+msgid "Search for address..."
+msgstr "Zoek een adres..."
+
+#: fields/google-map.php:177 fields/google-map.php:188
+msgid "Center"
+msgstr "Standaard locatie"
+
+#: fields/google-map.php:178 fields/google-map.php:189
+msgid "Center the initial map"
+msgstr "Bepaal de standaard locatie van de kaart"
+
+#: fields/google-map.php:199
+msgid "Zoom"
+msgstr "Inzoomen"
+
+#: fields/google-map.php:200
+msgid "Set the initial zoom level"
+msgstr "Bepaal het zoom niveau van de kaart"
+
+#: fields/google-map.php:209 fields/image.php:243 fields/image.php:276
+#: pro/fields/gallery.php:685 pro/fields/gallery.php:718
+msgid "Height"
+msgstr "Hoogte"
+
+#: fields/google-map.php:210
+msgid "Customise the map height"
+msgstr "Wijzig de hoogte van de kaart"
+
+#: fields/image.php:36
+msgid "Image"
+msgstr "Afbeelding"
+
+#: fields/image.php:51
+msgid "Select Image"
+msgstr "Selecteer afbeelding"
+
+#: fields/image.php:52 pro/fields/gallery.php:53
+msgid "Edit Image"
+msgstr "Bewerk afbeelding"
+
+#: fields/image.php:53 pro/fields/gallery.php:54
+msgid "Update Image"
+msgstr "Update afbeelding"
+
+#: fields/image.php:54
+msgid "Uploaded to this post"
+msgstr "Geüpload naar deze post"
+
+#: fields/image.php:55
+msgid "All images"
+msgstr "Alle afbeeldingen"
+
+#: fields/image.php:144
+msgid "No image selected"
+msgstr "Geen afbeelding geselecteerd"
+
+#: fields/image.php:144
+msgid "Add Image"
+msgstr "Voeg afbeelding toe"
+
+#: fields/image.php:198
+msgid "Image Array"
+msgstr "Afbeelding Array"
+
+#: fields/image.php:199
+msgid "Image URL"
+msgstr "Afbeelding URL"
+
+#: fields/image.php:200
+msgid "Image ID"
+msgstr "Afbeelding ID"
+
+#: fields/image.php:207 pro/fields/gallery.php:649
+msgid "Preview Size"
+msgstr "Voorbeeld afmeting"
+
+#: fields/image.php:208 pro/fields/gallery.php:650
+msgid "Shown when entering data"
+msgstr "Voorbeeld wordt na het uploaden/selecteren getoond"
+
+#: fields/image.php:232 fields/image.php:265 pro/fields/gallery.php:674
+#: pro/fields/gallery.php:707
+msgid "Restrict which images can be uploaded"
+msgstr "Bepaal welke afbeeldingen geüpload mogen worden"
+
+#: fields/image.php:235 fields/image.php:268 pro/fields/gallery.php:677
+#: pro/fields/gallery.php:710
+msgid "Width"
+msgstr "Breedte"
+
+#: fields/message.php:36 fields/message.php:102 fields/true_false.php:106
+msgid "Message"
+msgstr "Bericht"
+
+#: fields/message.php:103
+msgid "Please note that all text will first be passed through the wp function "
+msgstr "Tekst wordt automatisch voorzien van paragrafen door de wp functie: "
+
+#: fields/message.php:111
+msgid "Escape HTML"
+msgstr "Escape HTML"
+
+#: fields/message.php:112
+msgid "Controls how HTML tags are rendered"
+msgstr "Bepaal hoe HTML tags worden weergegeven"
+
+#: fields/number.php:36
+msgid "Number"
+msgstr "Nummer"
+
+#: fields/number.php:186
+msgid "Minimum Value"
+msgstr "Minimale waarde"
+
+#: fields/number.php:195
+msgid "Maximum Value"
+msgstr "Maximale waarde"
+
+#: fields/number.php:204
+msgid "Step Size"
+msgstr "Stapgrootte"
+
+#: fields/number.php:242
+msgid "Value must be a number"
+msgstr "Waarde moet numeriek zijn"
+
+#: fields/number.php:260
+#, php-format
+msgid "Value must be equal to or higher than %d"
+msgstr "Waarde moet gelijk of meer dan zijn %d"
+
+#: fields/number.php:268
+#, php-format
+msgid "Value must be equal to or lower than %d"
+msgstr "Waarde moet gelijk of minder zijn dan %d"
+
+#: fields/oembed.php:36
+msgid "oEmbed"
+msgstr "oEmbed"
+
+#: fields/oembed.php:199
+msgid "Enter URL"
+msgstr "Vul URL in"
+
+#: fields/oembed.php:214
+msgid "No embed found for the given URL"
+msgstr "Geen embed mogelijkheid gevonden voor de gewenste URL"
+
+#: fields/oembed.php:250 fields/oembed.php:260
+msgid "Embed Size"
+msgstr "Embed formaat"
+
+#: fields/page_link.php:206
+msgid "Archives"
+msgstr "Archieven"
+
+#: fields/page_link.php:521 fields/post_object.php:459
+#: fields/relationship.php:745
+msgid "Filter by Post Type"
+msgstr "Filter op post type"
+
+#: fields/page_link.php:529 fields/post_object.php:467
+#: fields/relationship.php:753
+msgid "All post types"
+msgstr "Alle post types"
+
+#: fields/page_link.php:535 fields/post_object.php:473
+#: fields/relationship.php:759
+msgid "Filter by Taxonomy"
+msgstr "Filter op taxonomy"
+
+#: fields/page_link.php:543 fields/post_object.php:481
+#: fields/relationship.php:767
+msgid "No taxonomy filter"
+msgstr "Geen taxonomy filter"
+
+#: fields/page_link.php:549 fields/post_object.php:487 fields/select.php:392
+#: fields/taxonomy.php:727 fields/user.php:372
+msgid "Allow Null?"
+msgstr "Mag leeg zijn?"
+
+#: fields/page_link.php:563 fields/post_object.php:501 fields/select.php:406
+#: fields/user.php:386
+msgid "Select multiple values?"
+msgstr "Meerdere selecties mogelijk?"
+
+#: fields/password.php:36
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: fields/post_object.php:36 fields/post_object.php:520
+#: fields/relationship.php:820
+msgid "Post Object"
+msgstr "Post object"
+
+#: fields/post_object.php:515 fields/relationship.php:815
+msgid "Return Format"
+msgstr "Output weergeven als"
+
+#: fields/post_object.php:521 fields/relationship.php:821
+msgid "Post ID"
+msgstr "Post ID"
+
+#: fields/radio.php:36
+msgid "Radio Button"
+msgstr "Radio button"
+
+#: fields/radio.php:202
+msgid "Other"
+msgstr "Anders namelijk"
+
+#: fields/radio.php:206
+msgid "Add 'other' choice to allow for custom values"
+msgstr "Voeg de keuze \"anders namelijk\" toe voor eigen invulling"
+
+#: fields/radio.php:212
+msgid "Save Other"
+msgstr "Anders namelijk waarde toevoegen aan keuzes?"
+
+#: fields/radio.php:216
+msgid "Save 'other' values to the field's choices"
+msgstr ""
+"Voeg de ingevulde \"anders namelijk\" waarde toe aan de keuzelijst na het "
+"opslaan van een post"
+
+#: fields/relationship.php:36
+msgid "Relationship"
+msgstr "Relatie"
+
+#: fields/relationship.php:47
+msgid "Maximum values reached ( {max} values )"
+msgstr "Maximum aantal waarden bereikt ( {max} waarden )"
+
+#: fields/relationship.php:48
+msgid "Loading"
+msgstr "Laden"
+
+#: fields/relationship.php:49
+msgid "No matches found"
+msgstr "Geen gelijkenis gevonden"
+
+#: fields/relationship.php:637
+msgid "Search..."
+msgstr "Zoeken..."
+
+#: fields/relationship.php:646
+msgid "Select post type"
+msgstr "Selecteer post type"
+
+#: fields/relationship.php:659
+msgid "Select taxonomy"
+msgstr "Selecteer taxonomy"
+
+#: fields/relationship.php:778
+msgid "Search"
+msgstr "Zoeken"
+
+#: fields/relationship.php:780 fields/taxonomy.php:36 fields/taxonomy.php:698
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#: fields/relationship.php:787
+msgid "Elements"
+msgstr "Elementen"
+
+#: fields/relationship.php:788
+msgid "Selected elements will be displayed in each result"
+msgstr "Selecteer de elementen die moeten worden getoond in elk resultaat"
+
+#: fields/relationship.php:806
+msgid "Maximum posts"
+msgstr "Maximum aantal selecties"
+
+#: fields/select.php:36 fields/select.php:160 fields/taxonomy.php:719
+msgid "Select"
+msgstr "Selecteer"
+
+#: fields/select.php:420
+msgid "Stylised UI"
+msgstr "Uitgebreide weergave"
+
+#: fields/select.php:434
+msgid "Use AJAX to lazy load choices?"
+msgstr "AJAX gebruiken om keuzes te laden?"
+
+#: fields/tab.php:36
+msgid "Tab"
+msgstr "Tab"
+
+#: fields/tab.php:94
+msgid "Warning"
+msgstr "Waarschuwing"
+
+#: fields/tab.php:99
+msgid ""
+"The tab field will display incorrectly when added to a Table style repeater "
+"field or flexible content field layout"
+msgstr "Deze tab zal niet correct worden weergegeven in een herhalende tabel"
+
+#: fields/tab.php:112
+msgid ""
+"Use \"Tab Fields\" to better organize your edit screen by grouping fields "
+"together."
+msgstr "Gebruik tabbladen om velden in het edit screen te organiseren."
+
+#: fields/tab.php:114
+msgid ""
+"All fields following this \"tab field\" (or until another \"tab field\" is "
+"defined) will be grouped together using this field's label as the tab "
+"heading."
+msgstr ""
+"Alle velden onder dit \"Tab veld\" zullen worden toegevoegd aan deze tab. "
+"Het ingevulde \"Veld label\" dient als benaming van de tab."
+
+#: fields/tab.php:121
+msgid "Placement"
+msgstr "Plaatsing"
+
+#: fields/taxonomy.php:667
+msgid "None"
+msgstr "Geen"
+
+#: fields/taxonomy.php:713
+msgid "Multiple Values"
+msgstr "Meerdere waardes"
+
+#: fields/taxonomy.php:715
+msgid "Multi Select"
+msgstr "Multi-selecteer"
+
+#: fields/taxonomy.php:717
+msgid "Single Value"
+msgstr "Enkele waarde"
+
+#: fields/taxonomy.php:718
+msgid "Radio Buttons"
+msgstr "Radio buttons"
+
+#: fields/taxonomy.php:741
+msgid "Load & Save Terms to Post"
+msgstr "Laad & sla termen op bij post"
+
+#: fields/taxonomy.php:745
+msgid ""
+"Load value based on the post's terms and update the post's terms on save"
+msgstr ""
+"Laad waarde aan de hand van de post termen en update de post termen bij het "
+"opslaan"
+
+#: fields/taxonomy.php:756
+msgid "Term Object"
+msgstr "Term object"
+
+#: fields/taxonomy.php:757
+msgid "Term ID"
+msgstr "Term ID"
+
+#: fields/text.php:36
+msgid "Text"
+msgstr "Tekst"
+
+#: fields/text.php:184 fields/textarea.php:163
+msgid "Character Limit"
+msgstr "Karakter limiet"
+
+#: fields/text.php:185 fields/textarea.php:164
+msgid "Leave blank for no limit"
+msgstr "Laat leeg voor geen limiet"
+
+#: fields/textarea.php:36
+msgid "Text Area"
+msgstr "Tekstvlak"
+
+#: fields/textarea.php:172
+msgid "Rows"
+msgstr "Rijen"
+
+#: fields/textarea.php:173
+msgid "Sets the textarea height"
+msgstr "Hoogte (in regels) voor dit tekstvlak"
+
+#: fields/textarea.php:182
+msgid "New Lines"
+msgstr "Nieuwe regels"
+
+#: fields/textarea.php:183
+msgid "Controls how new lines are rendered"
+msgstr "Bepaal wat er gebeurt met een nieuwe tekstregel"
+
+#: fields/textarea.php:187
+msgid "Automatically add paragraphs"
+msgstr "Automatisch paragrafen toevoegen"
+
+#: fields/textarea.php:188
+msgid "Automatically add &lt;br&gt;"
+msgstr "Automatisch een nieuwe regel maken &lt;br /&gt;"
+
+#: fields/textarea.php:189
+msgid "No Formatting"
+msgstr "Niets ondernemen"
+
+#: fields/true_false.php:36
+msgid "True / False"
+msgstr "Waar / niet waar"
+
+#: fields/true_false.php:107
+msgid "eg. Show extra content"
+msgstr "bijv. Toon op homepage"
+
+#: fields/url.php:36
+msgid "Url"
+msgstr "URL"
+
+#: fields/url.php:160
+msgid "Value must be a valid URL"
+msgstr "Waarde moet een geldige URL zijn"
+
+#: fields/user.php:357
+msgid "Filter by role"
+msgstr "Filter op rol"
+
+#: fields/user.php:365
+msgid "All user roles"
+msgstr "Alle rollen"
+
+#: fields/wysiwyg.php:37
+msgid "Wysiwyg Editor"
+msgstr "Wysiwyg editor"
+
+#: fields/wysiwyg.php:297
+msgid "Visual"
+msgstr "Visueel"
+
+#: fields/wysiwyg.php:298
+msgctxt "Name for the Text editor tab (formerly HTML)"
+msgid "Text"
+msgstr "Tekst"
+
+#: fields/wysiwyg.php:354
+msgid "Tabs"
+msgstr "Tabbladen"
+
+#: fields/wysiwyg.php:359
+msgid "Visual & Text"
+msgstr "Visueel & tekst"
+
+#: fields/wysiwyg.php:360
+msgid "Visual Only"
+msgstr "Alleen visueel"
+
+#: fields/wysiwyg.php:361
+msgid "Text Only"
+msgstr "Alleen tekst"
+
+#: fields/wysiwyg.php:368
+msgid "Toolbar"
+msgstr "Toolbar"
+
+#: fields/wysiwyg.php:378
+msgid "Show Media Upload Buttons?"
+msgstr "Toon media upload buttons?"
+
+#: forms/post.php:341
+msgid "Edit field group"
+msgstr "Bewerk groep"
+
+#: pro/acf-pro.php:24
+msgid "Advanced Custom Fields PRO"
+msgstr "Advanced Custom Fields PRO"
+
+#: pro/acf-pro.php:174
+msgid "Flexible Content requires at least 1 layout"
+msgstr "Flexibele content vereist minimaal 1 layout"
+
+#: pro/admin/connect.php:167
+#, php-format
+msgid ""
+"To enable updates, please enter your license key on the <a href=\"%s"
+"\">Updates</a> page. If you don't have a licence key, please see <a href=\"%s"
+"\">details & pricing</a>"
+msgstr ""
+"Voor het verkrijgen van updates is een licentiesleutel vereist. Vul uw "
+"licentiecode in op de <a href=\"%s\">Updates</a> pagina, of schaf een "
+"licentiecode aan via <a href=\"%s\">details & prijzen</a>."
+
+#: pro/admin/options-page.php:55
+msgid "Options Page"
+msgstr "Opties pagina"
+
+#: pro/admin/options-page.php:90
+msgid "No options pages exist"
+msgstr "Er zijn nog geen optie pagina's"
+
+#: pro/admin/options-page.php:296
+msgid "Options Updated"
+msgstr "Opties bijgewerkt"
+
+#: pro/admin/options-page.php:304
+msgid "No Custom Field Groups found for this options page"
+msgstr "Er zijn geen groepen gevonden voor deze optie pagina"
+
+#: pro/admin/options-page.php:304
+msgid "Create a Custom Field Group"
+msgstr "Maak een extra velden groep"
+
+#: pro/admin/settings-updates.php:115
+msgid "<b>Error</b>. Could not connect to update server"
+msgstr "<b>Fout</b>. Kan niet verbinden met de update server"
+
+#: pro/admin/settings-updates.php:245 pro/admin/settings-updates.php:312
+msgid "<b>Connection Error</b>. Sorry, please try again"
+msgstr "<b>Verbindingsfout</b>. Onze excuses, probeer het later nog eens"
+
+#: pro/admin/views/options-page.php:58
+msgid "Save Options"
+msgstr "Opties bijwerken"
+
+#: pro/admin/views/settings-updates.php:11
+msgid "Deactivate License"
+msgstr "Licentiecode deactiveren"
+
+#: pro/admin/views/settings-updates.php:11
+msgid "Activate License"
+msgstr "Activeer licentiecode"
+
+#: pro/admin/views/settings-updates.php:21
+msgid "License"
+msgstr "Licentie"
+
+#: pro/admin/views/settings-updates.php:24
+msgid ""
+"To unlock updates, please enter your license key below. If you don't have a "
+"licence key, please see"
+msgstr ""
+"Voor het verkrijgen van updates is een licentiesleutel vereist. Indien je "
+"niet beschikt over een licentiecode kun je deze aanschaffen, zie:"
+
+#: pro/admin/views/settings-updates.php:24
+msgid "details & pricing"
+msgstr "details & kosten"
+
+#: pro/admin/views/settings-updates.php:33
+msgid "License Key"
+msgstr "Licentiecode"
+
+#: pro/admin/views/settings-updates.php:65
+msgid "Update Information"
+msgstr "Update informatie"
+
+#: pro/admin/views/settings-updates.php:72
+msgid "Current Version"
+msgstr "Huidige versie"
+
+#: pro/admin/views/settings-updates.php:80
+msgid "Latest Version"
+msgstr "Nieuwste versie"
+
+#: pro/admin/views/settings-updates.php:88
+msgid "Update Available"
+msgstr "Update beschikbaar"
+
+#: pro/admin/views/settings-updates.php:96
+msgid "Update Plugin"
+msgstr "Update plugin"
+
+#: pro/admin/views/settings-updates.php:98
+msgid "Please enter your license key above to unlock updates"
+msgstr "Vul uw licentiecode hierboven in om updates te ontvangen"
+
+#: pro/admin/views/settings-updates.php:104
+msgid "Check Again"
+msgstr "Controleer op updates"
+
+#: pro/admin/views/settings-updates.php:121
+msgid "Upgrade Notice"
+msgstr "Upgrade opmerking"
+
+#: pro/fields/flexible-content.php:36
+msgid "Flexible Content"
+msgstr "Flexibele content"
+
+#: pro/fields/flexible-content.php:42 pro/fields/repeater.php:43
+msgid "Add Row"
+msgstr "Nieuwe regel"
+
+#: pro/fields/flexible-content.php:45
+msgid "layout"
+msgstr "layout"
+
+#: pro/fields/flexible-content.php:46
+msgid "layouts"
+msgstr "layouts"
+
+#: pro/fields/flexible-content.php:47
+msgid "remove {layout}?"
+msgstr "verwijder {layout}?"
+
+#: pro/fields/flexible-content.php:48
+msgid "This field requires at least {min} {identifier}"
+msgstr "Dit veld vereist op zijn minst {min} {identifier}"
+
+#: pro/fields/flexible-content.php:49
+msgid "This field has a limit of {max} {identifier}"
+msgstr "Dit veld heeft een limiet van {max} {identifier}"
+
+#: pro/fields/flexible-content.php:50
+msgid "This field requires at least {min} {label} {identifier}"
+msgstr "Dit veld vereist op zijn minst {min} {label} {identifier}"
+
+#: pro/fields/flexible-content.php:51
+msgid "Maximum {label} limit reached ({max} {identifier})"
+msgstr "Maximum {label} limiet bereikt ({max} {identifier})"
+
+#: pro/fields/flexible-content.php:52
+msgid "{available} {label} {identifier} available (max {max})"
+msgstr "{available} {label} {identifier} beschikbaar (max {max})"
+
+#: pro/fields/flexible-content.php:53
+msgid "{required} {label} {identifier} required (min {min})"
+msgstr "{required} {label} {identifier} verplicht (min {min})"
+
+#: pro/fields/flexible-content.php:211
+#, php-format
+msgid "Click the \"%s\" button below to start creating your layout"
+msgstr "Klik op de \"%s\" button om een nieuwe lay-out te maken"
+
+#: pro/fields/flexible-content.php:369
+msgid "Add layout"
+msgstr "Layout toevoegen"
+
+#: pro/fields/flexible-content.php:374
+msgid "Remove layout"
+msgstr "Verwijder layout"
+
+#: pro/fields/flexible-content.php:518
+msgid "Reorder Layout"
+msgstr "Herorder layout"
+
+#: pro/fields/flexible-content.php:518
+msgid "Reorder"
+msgstr "Herorder"
+
+#: pro/fields/flexible-content.php:519
+msgid "Delete Layout"
+msgstr "Verwijder layout"
+
+#: pro/fields/flexible-content.php:520
+msgid "Duplicate Layout"
+msgstr "Dupliceer layout"
+
+#: pro/fields/flexible-content.php:521
+msgid "Add New Layout"
+msgstr "Nieuwe layout"
+
+#: pro/fields/flexible-content.php:565
+msgid "Display"
+msgstr "Toon"
+
+#: pro/fields/flexible-content.php:576 pro/fields/repeater.php:399
+msgid "Table"
+msgstr "Tabel"
+
+#: pro/fields/flexible-content.php:577 pro/fields/repeater.php:400
+msgid "Block"
+msgstr "Blok"
+
+#: pro/fields/flexible-content.php:578 pro/fields/repeater.php:401
+msgid "Row"
+msgstr "Rij"
+
+#: pro/fields/flexible-content.php:593
+msgid "Min"
+msgstr "Min"
+
+#: pro/fields/flexible-content.php:606
+msgid "Max"
+msgstr "Max"
+
+#: pro/fields/flexible-content.php:634 pro/fields/repeater.php:408
+msgid "Button Label"
+msgstr "Button label"
+
+#: pro/fields/flexible-content.php:643
+msgid "Minimum Layouts"
+msgstr "Minimale layouts"
+
+#: pro/fields/flexible-content.php:652
+msgid "Maximum Layouts"
+msgstr "Maximale layouts"
+
+#: pro/fields/gallery.php:36
+msgid "Gallery"
+msgstr "Galerij"
+
+#: pro/fields/gallery.php:52
+msgid "Add Image to Gallery"
+msgstr "Voeg afbeelding toe aan galerij"
+
+#: pro/fields/gallery.php:56
+msgid "Maximum selection reached"
+msgstr "Maximale selectie bereikt"
+
+#: pro/fields/gallery.php:333
+msgid "Length"
+msgstr "Lengte"
+
+#: pro/fields/gallery.php:353
+msgid "Remove"
+msgstr "Verwijder"
+
+#: pro/fields/gallery.php:547
+msgid "Add to gallery"
+msgstr "Afbeelding(en) toevoegen"
+
+#: pro/fields/gallery.php:551
+msgid "Bulk actions"
+msgstr "Acties"
+
+#: pro/fields/gallery.php:552
+msgid "Sort by date uploaded"
+msgstr "Sorteer op datum geüpload"
+
+#: pro/fields/gallery.php:553
+msgid "Sort by date modified"
+msgstr "Sorteer op datum aangepast"
+
+#: pro/fields/gallery.php:554
+msgid "Sort by title"
+msgstr "Sorteer op titel"
+
+#: pro/fields/gallery.php:555
+msgid "Reverse current order"
+msgstr "Keer volgorde om"
+
+#: pro/fields/gallery.php:573
+msgid "Close"
+msgstr "Sluiten"
+
+#: pro/fields/gallery.php:631
+msgid "Minimum Selection"
+msgstr "Minimale selectie"
+
+#: pro/fields/gallery.php:640
+msgid "Maximum Selection"
+msgstr "Maximale selectie"
+
+#: pro/fields/gallery.php:833
+#, php-format
+msgid "%s requires at least %s selection"
+msgid_plural "%s requires at least %s selections"
+msgstr[0] "%s verplicht tenminste %s selectie"
+msgstr[1] "%s verplicht tenminste %s selecties"
+
+#: pro/fields/repeater.php:36
+msgid "Repeater"
+msgstr "Herhalen"
+
+#: pro/fields/repeater.php:46
+msgid "Minimum rows reached ({min} rows)"
+msgstr "Minimum aantal rijen bereikt ({max} rijen)"
+
+#: pro/fields/repeater.php:47
+msgid "Maximum rows reached ({max} rows)"
+msgstr "Maximum aantal rijen bereikt ({max} rijen)"
+
+#: pro/fields/repeater.php:259
+msgid "Drag to reorder"
+msgstr "Sleep om te sorteren"
+
+#: pro/fields/repeater.php:301
+msgid "Add row"
+msgstr "Nieuwe regel"
+
+#: pro/fields/repeater.php:302
+msgid "Remove row"
+msgstr "Verwijder regel"
+
+#: pro/fields/repeater.php:350
+msgid "Sub Fields"
+msgstr "Sub-velden"
+
+#: pro/fields/repeater.php:372
+msgid "Minimum Rows"
+msgstr "Minimum aantal rijen"
+
+#: pro/fields/repeater.php:382
+msgid "Maximum Rows"
+msgstr "Maximum aantal rijen"
+
+#~ msgid "Custom field updated."
+#~ msgstr "Extra veld bijgewerkt."
+
+#~ msgid "Custom field deleted."
+#~ msgstr "Extra veld verwijderd."
+
+#~ msgid "Field group duplicated! Edit the new \"%s\" field group."
+#~ msgstr "Groep gedupliceerd! Bewerk de nieuwe \"%s\" groep."
+
+#~ msgid "Import/Export"
+#~ msgstr "Import/Export"
+
+#~ msgid "Column Width"
+#~ msgstr "Kolom breedte"
+
+#~ msgid "Attachment Details"
+#~ msgstr "Bijlage details"
+
+#~ msgid "Field group restored to revision from %s"
+#~ msgstr "Groepen hersteld naar revisie van %s"
+
+#~ msgid "No ACF groups selected"
+#~ msgstr "Geen ACF groep geselecteerd"
+
+#~ msgid "Normal"
+#~ msgstr "Normaal"
+
+#~ msgid "No Metabox"
+#~ msgstr "Geen metabox"
+
+#~ msgid ""
+#~ "Read documentation, learn the functions and find some tips &amp; tricks "
+#~ "for your next web project."
+#~ msgstr ""
+#~ "Lees de documentatie, leer de functies kennen en ontdek tips & tricks "
+#~ "voor jouw web project."
+
+#~ msgid "Visit the ACF website"
+#~ msgstr "Bezoek de ACF website"
+
+#~ msgid "Vote"
+#~ msgstr "Stem"
+
+#~ msgid "Follow"
+#~ msgstr "Volg op Twitter"
+
+#~ msgid "Validation Failed. One or more fields below are required."
+#~ msgstr ""
+#~ "Validatie mislukt. E&eacute;n of meer velden hieronder zijn verplicht."
+
+#~ msgid "Add File to Field"
+#~ msgstr "+ Bestand toevoegen aan veld"
+
+#~ msgid "Add Image to Field"
+#~ msgstr "Add Image to Field"
+
+#~ msgid "Attachment updated"
+#~ msgstr "Bijlage bijgewerkt."
+
+#~ msgid "Repeater field deactivated"
+#~ msgstr "Repeater Field gedeactiveerd"
+
+#~ msgid "Gallery field deactivated"
+#~ msgstr "Gallery field gedeactiveerd"
+
+#~ msgid "Repeater field activated"
+#~ msgstr "Repeater field geactiveerd"
+
+#~ msgid "Options page activated"
+#~ msgstr "Options page geactiveerd"
+
+#~ msgid "Flexible Content field activated"
+#~ msgstr "Flexible Content field geactiveerd"
+
+#~ msgid "Gallery field activated"
+#~ msgstr "Gallery field geactiveerd"
+
+#~ msgid "License key unrecognised"
+#~ msgstr "Licentie code niet herkend"
+
+#~ msgid ""
+#~ "Add-ons can be unlocked by purchasing a license key. Each key can be used "
+#~ "on multiple sites."
+#~ msgstr ""
+#~ "Add-ons kun je activeren door een licentie code te kopen. Elke code kan "
+#~ "gebruikt worden op meerdere websites."
+
+#~ msgid "Activation Code"
+#~ msgstr "Activatie code"
+
+#~ msgid "Repeater Field"
+#~ msgstr "Repeater Field"
+
+#~ msgid "Active"
+#~ msgstr "Actief"
+
+#~ msgid "Inactive"
+#~ msgstr "Niet actief"
+
+#~ msgid "Flexible Content Field"
+#~ msgstr "Flexible Content Field"
+
+#~ msgid "Gallery Field"
+#~ msgstr "Gallery Field"
+
+#~ msgid "Export Field Groups to XML"
+#~ msgstr "Exporteer groepen naar XML"
+
+#~ msgid ""
+#~ "ACF will create a .xml export file which is compatible with the native WP "
+#~ "import plugin."
+#~ msgstr ""
+#~ "ACF maakt een .xml export bestand die compatibel is met de ingebouwde WP "
+#~ "import plugin."
+
+#~ msgid ""
+#~ "Imported field groups <b>will</b> appear in the list of editable field "
+#~ "groups. This is useful for migrating fields groups between Wp websites."
+#~ msgstr ""
+#~ "Ge&iuml;mporteerde veld groepen <b>verschijnen</b> in de lijst van "
+#~ "beheerbare veld groepen. Dit is handig voor het migreren van veld groepen "
+#~ "tussen WP websites."
+
+#~ msgid "Select field group(s) from the list and click \"Export XML\""
+#~ msgstr "Selecteer veld groep(en) van van de lijst en klik \"Exporteer XML\""
+
+#~ msgid "Save the .xml file when prompted"
+#~ msgstr "Sla de .xml file op wanneer er om gevraagd wordt"
+
+#~ msgid "Navigate to Tools &raquo; Import and select WordPress"
+#~ msgstr "Navigeer naar Extra &raquo; Importeren en selecteer WordPress "
+
+#~ msgid "Install WP import plugin if prompted"
+#~ msgstr "Installeer de WP import plugin als er naar wordt gevraagd"
+
+#~ msgid "Upload and import your exported .xml file"
+#~ msgstr "Upload en import je ge&euml;xporteerde .xml bestand"
+
+#~ msgid "Select your user and ignore Import Attachments"
+#~ msgstr "Selecteer je gebruiker en negeer import bijlages"
+
+#~ msgid "That's it! Happy WordPressing"
+#~ msgstr "Dat is het! Happy WordPressing"
+
+#~ msgid "Export XML"
+#~ msgstr "Exporteer XML"
+
+#~ msgid "ACF will create the PHP code to include in your theme."
+#~ msgstr "ACF maakt de PHP code die je kan integreren in jouw thema."
+
+#~ msgid "Register Field Groups"
+#~ msgstr "Registreer veld groepen"
+
+#~ msgid ""
+#~ "Please note that if you export and register field groups within the same "
+#~ "WP, you will see duplicate fields on your edit screens. To fix this, "
+#~ "please move the original field group to the trash or remove the code from "
+#~ "your functions.php file."
+#~ msgstr ""
+#~ "Houd er rekening mee dat wanneer je veld groepen exporteert en "
+#~ "registreert in dezelfde WP installatie, ze verschijnen als gedupliceerde "
+#~ "velden in je edit screens. Om dit te verhelpen: verwijder de originele "
+#~ "veld groepen naar de prullenbak of verwijder de code uit je functions.php "
+#~ "bestand."
+
+#~ msgid "Select field group(s) from the list and click \"Create PHP\""
+#~ msgstr "Selecteer veld groepen uit de lijst en klik \"Maak PHP\""
+
+#~ msgid "Copy the PHP code generated"
+#~ msgstr "Kopieer de gegenereerde PHP code"
+
+#~ msgid "Paste into your functions.php file"
+#~ msgstr "Plak in je functions.php bestand"
+
+#~ msgid ""
+#~ "To activate any Add-ons, edit and use the code in the first few lines."
+#~ msgstr ""
+#~ "Om add-ons te activeren, bewerk en gebruik de code in de eerste regels."
+
+#~ msgid "Create PHP"
+#~ msgstr "Maak PHP"
+
+#~ msgid "Back to settings"
+#~ msgstr "Terug naar instellingen"
+
+#~ msgid "Advanced Custom Fields Settings"
+#~ msgstr "Advanced Custom Fields instellingen"
+
+#~ msgid "requires a database upgrade"
+#~ msgstr "vereist een database upgrade"
+
+#~ msgid "why?"
+#~ msgstr "waarom?"
+
+#~ msgid "Please"
+#~ msgstr "Graag"
+
+#~ msgid "backup your database"
+#~ msgstr "backup maken van je database"
+
+#~ msgid "then click"
+#~ msgstr "vervolgens klikken op"
+
+#~ msgid "Moving user custom fields from wp_options to wp_usermeta'"
+#~ msgstr "Verplaats gebruikers eigen velden van wp_options naar wp_usermeta"
+
+#~ msgid "No choices to choose from"
+#~ msgstr "Geen keuzes om uit te kiezen"
+
+#~ msgid "Red"
+#~ msgstr "Rood"
+
+#~ msgid "Blue"
+#~ msgstr "Blauw"
+
+#~ msgid "blue : Blue"
+#~ msgstr "blauw : Blauw"
+
+#~ msgid "File Updated."
+#~ msgstr "Bestand bijgewerkt."
+
+#~ msgid "Media attachment updated."
+#~ msgstr "Media bijlage bijgewerkt."
+
+#~ msgid "Add Selected Files"
+#~ msgstr "Geselecteerde bestanden toevoegen"
+
+#~ msgid "+ Add Row"
+#~ msgstr "+ Nieuwe regel"
+
+#~ msgid "Field Order"
+#~ msgstr "Veld volgorde"
+
+#~ msgid ""
+#~ "No fields. Click the \"+ Add Sub Field button\" to create your first "
+#~ "field."
+#~ msgstr ""
+#~ "Geen velden. Klik op \"+ Nieuw sub veld\" button om je eerste veld te "
+#~ "maken."
+
+#~ msgid "Docs"
+#~ msgstr "Documentatie"
+
+#~ msgid "Close Sub Field"
+#~ msgstr "Sub veld sluiten"
+
+#~ msgid "+ Add Sub Field"
+#~ msgstr "+ Nieuw sub veld"
+
+#~ msgid "Alternate Text"
+#~ msgstr "Alternatieve tekst"
+
+#~ msgid "Caption"
+#~ msgstr "Onderschrift"
+
+#~ msgid "Description"
+#~ msgstr "Omschrijving"
+
+#~ msgid "Thumbnail is advised"
+#~ msgstr "Thumbnail wordt geadviseerd"
+
+#~ msgid "Image Updated"
+#~ msgstr "Afbeelding bijgwerkt"
+
+#~ msgid "Grid"
+#~ msgstr "Grid"
+
+#~ msgid "List"
+#~ msgstr "Lijst"
+
+#~ msgid "No images selected"
+#~ msgstr "Geen afbeeldingen geselecteerd"
+
+#~ msgid "1 image selected"
+#~ msgstr "1 afbeelding geselecteerd"
+
+#~ msgid "{count} images selected"
+#~ msgstr "{count} afbeeldingen geselecteerd"
+
+#~ msgid "Added"
+#~ msgstr "Toegevoegd"
+
+#~ msgid "Image already exists in gallery"
+#~ msgstr "Afbeelding bestaat al galerij"
+
+#~ msgid "Image Updated."
+#~ msgstr "Afbeelding bijgewerkt."
+
+#~ msgid "Add selected Images"
+#~ msgstr "Voeg geselecteerde afbeeldingen toe"
+
+#~ msgid "Repeater Fields"
+#~ msgstr "Velden herhalen"
+
+#~ msgid "Field Instructions"
+#~ msgstr "Veld instructies"
+
+#~ msgid "Table (default)"
+#~ msgstr "Tabel (standaard)"
+
+#~ msgid "Define how to render html tags"
+#~ msgstr "Bepaal hoe HTML tags worden omgezet"
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#~ msgid "Define how to render html tags / new lines"
+#~ msgstr "Bepaal hoe HTML tags worden omgezet / nieuwe regels"
+
+#~ msgid "Run filter \"the_content\"?"
+#~ msgstr "Gebruik filter \"the_content\"?"
+
+#~ msgid "Enable this filter to use shortcodes within the WYSIWYG field"
+#~ msgstr "Activeer dit filter om shortcodes te gebruiken in het WYSIWYG veld"
+
+#~ msgid ""
+#~ "This format will determin the value saved to the database and returned "
+#~ "via the API"
+#~ msgstr ""
+#~ "De datum wordt in deze indeling opgeslagen in de database en teruggegeven "
+#~ "door de API"
+
+#~ msgid "\"yymmdd\" is the most versatile save format. Read more about"
+#~ msgstr "\"yymmdd\" is de meest veelzijdige opslaan indeling. Lees meer op"
+
+#~ msgid "jQuery date formats"
+#~ msgstr "jQuery datum format"
+
+#~ msgid "This format will be seen by the user when entering a value"
+#~ msgstr ""
+#~ "Deze indeling wordt gezien door de gebruiker wanneer datum wordt ingevuld"
+
+#~ msgid ""
+#~ "\"dd/mm/yy\" or \"mm/dd/yy\" are the most used display formats. Read more "
+#~ "about"
+#~ msgstr ""
+#~ "\"dd/mm/yy\" of \"mm/dd/yy\" zijn de meest gebruikte indelingen. Lees "
+#~ "meer op"
+
+#~ msgid "Page Specific"
+#~ msgstr "Pagina specifiek"
+
+#~ msgid "Post Specific"
+#~ msgstr "Bericht specifiek"
+
+#~ msgid "Taxonomy (Add / Edit)"
+#~ msgstr "Taxonomy (Nieuwe / bewerk)"
+
+#~ msgid "Media (Edit)"
+#~ msgstr "Media (Bewerk)"
+
+#~ msgid "match"
+#~ msgstr "komt overeen met"
+
+#~ msgid "all"
+#~ msgstr "allen"
+
+#~ msgid "of the above"
+#~ msgstr "van hierboven"
+
+#~ msgid "Unlock options add-on with an activation code"
+#~ msgstr "Ontgrendel opties add-on met een activatie code"
+
+#~ msgid "Add Fields to Edit Screens"
+#~ msgstr "Voeg velden toe aan edit screen"
+
+#~ msgid "Navigate to the"
+#~ msgstr "Ga naar de"
+
+#~ msgid "and select WordPress"
+#~ msgstr "en selecteer WordPress"
+
+#~ msgid "eg. dd/mm/yy. read more about"
+#~ msgstr "bijv. dd/mm/yyyy. Lees meer over"
+
+#~ msgid ""
+#~ "Filter posts by selecting a post type<br />\n"
+#~ "\t\t\t\tTip: deselect all post types to show all post type's posts"
+#~ msgstr ""
+#~ "Filter post type door te selecteren<br />\n"
+#~ "\t\t\t\tTip: selecteer 'alles' om alle posts van alle post type te tonen"
+
+#~ msgid "Everything Fields deactivated"
+#~ msgstr "Everything Fields gedeactiveerd"
+
+#~ msgid "Everything Fields activated"
+#~ msgstr "Everything Fields geactiveerd"
+
+#~ msgid "Set to -1 for infinite"
+#~ msgstr "Plaats -1 voor oneindig"
+
+#~ msgid "Row Limit"
+#~ msgstr "Rij limiet"

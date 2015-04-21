@@ -1,0 +1,8 @@
+<?php
+
+define('DB_NAME', 'healthslam');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
+define('DB_HOST', 'localhost');
+$table_prefix  = 'hs_';
+define('WP_DEBUG', false);
