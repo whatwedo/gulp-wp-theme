@@ -16,6 +16,7 @@
     "jQuery": "global:jQuery"
   },
   "devDependencies": {
+    "bower": "^1.4.1",
     "browser-sync": "~2.6.4",
     "browserify": "~9.0.8",
     "browserify-shim": "~3.8.5",
