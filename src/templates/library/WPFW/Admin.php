@@ -11,8 +11,6 @@ class Admin
 
     public static $loginLogo = '';
 
-    public static $adminFooter = '<span id="footer-thankyou">Developed with &hearts; by <a href="http://whatwedo.ch" target="_blank">whatwedo.ch</a></span> in Bern.';
-
     public function __construct()
     {
         // uncomment this to add a login logo
@@ -34,9 +32,6 @@ class Admin
 
         // changes the Login Logo
         add_action('login_enqueue_scripts', array(&$this, 'changeLoginLogo'));
-
-        // changes the Admin footer
-        add_filter('admin_footer_text', array(&$this, 'changeAdminFooter'));
 
         // set WP SEO by Yoast Plugin Metabox Position
         apply_filters( 'wpseo_metabox_prio', 'low' );
@@ -159,11 +154,6 @@ class Admin
             }
         </style>
 <?php
-    }
-
-    public function changeAdminFooter()
-    {
-        return static::$adminFooter;
     }
 
 }
