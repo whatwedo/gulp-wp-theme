@@ -48,6 +48,10 @@ module.exports = {
       dest: dest
     }
   },
+  changelog: {
+    src: './CHANGELOG.md',
+    dest: dest
+  },
   browserify: {
     // Enable source maps
     debug: true,

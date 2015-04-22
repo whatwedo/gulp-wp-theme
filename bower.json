@@ -1,6 +1,6 @@
 {
   "name": "gulp-wp-theme",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "WordPress Theme Project Templates for Gulp ",
   "authors": [
     "René Stalder <rene@whatwedo.ch>"

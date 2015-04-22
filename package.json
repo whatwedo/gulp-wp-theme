@@ -1,6 +1,6 @@
 {
   "name": "gulp-wp-theme",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "WordPress Theme Project Templates for Gulp ",
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
     "jQuery": "global:jQuery"
   },
   "devDependencies": {
+    "bower": "^1.4.1",
     "browser-sync": "~2.6.4",
     "browserify": "~9.0.8",
     "browserify-shim": "~3.8.5",
@@ -26,6 +27,7 @@
     "gulp-changed": "^1.2.1",
     "gulp-if": "~1.2.5",
     "gulp-imagemin": "^2.2.1",
+    "gulp-markdown": "^1.0.0",
     "gulp-minify-css": "^1.0.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "*",
