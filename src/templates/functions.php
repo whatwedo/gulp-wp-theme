@@ -1,5 +1,4 @@
 <?php
 /**
- * Cherry Pickings GmbH
- * by whatwedo GmbH <https://whatwedo.ch>
+ * @version {PKG_VERSION}
  */
