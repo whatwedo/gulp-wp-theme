@@ -8,16 +8,20 @@
    See browserify.bundleConfigs in gulp/config.js
 */
 
-var browserify = require('browserify');
-var debowerify = require('debowerify');
-var browserSync = require('browser-sync');
-var watchify = require('watchify');
-var bundleLogger = require('../util/bundleLogger');
-var gulp = require('gulp');
-var handleErrors = require('../util/handleErrors');
-var source = require('vinyl-source-stream');
-var config = require('../config').browserify;
-var _ = require('lodash');
+var browserify    = require('browserify');
+var debowerify    = require('debowerify');
+var browserSync   = require('browser-sync');
+var watchify      = require('watchify');
+var replace       = require('gulp-replace');
+var fs            = require('fs');
+var bundleLogger  = require('../util/bundleLogger');
+var gulp          = require('gulp');
+var handleErrors  = require('../util/handleErrors');
+var source        = require('vinyl-source-stream');
+var pkg           = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+var config        = require('../config').browserify;
+var _             = require('lodash');
+var path          = require('path');
 
 var browserifyTask = function(callback, devMode) {
 
