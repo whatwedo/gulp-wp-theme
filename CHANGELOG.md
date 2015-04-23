@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## v0.7.0 - 2015-04-23
+### Added
+- `gulp bump` command to increment version in `CHANGELOG.md`, `package.json`, `bower.json` and markup / js / stylus files (version-placeholder: {PKG_VERSION})
+
 ## v0.6.0 - 2015-04-22
 ### Added
 - Show changelog in WordPress backend

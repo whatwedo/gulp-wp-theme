@@ -1,0 +1,3 @@
+/**
+ * @version {PKG_VERSION}
+ */
