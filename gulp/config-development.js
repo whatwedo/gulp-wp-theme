@@ -31,12 +31,6 @@ module.exports = {
     src: src + "/resources/images/**",
     dest: dest + "/resources/images"
   },
-  substituter: {
-    enabled: true,
-    cdn: '',
-    js: '<script src="{cdn}/{file}"></script>',
-    css: '<link rel="stylesheet" href="{cdn}/{file}">'
-  },
   markup: {
     src: src + '/templates/**/*.php',
     dest: dest
