@@ -9,7 +9,6 @@ var replace       = require('gulp-replace');
 var fs            = require('fs');
 var reload        = require('browser-sync').reload;
 var sourcemaps    = require('gulp-sourcemaps');
-var pkg           = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 var handleErrors  = require('../../util/handleErrors');
 var config        = require('../../config').stylus;
 
@@ -20,6 +19,8 @@ gulp.task('stylus', function() {
       keepSpecialComments: 1
     }
   };
+
+  var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 
   return gulp.src(config.main)
   .pipe(plumber())

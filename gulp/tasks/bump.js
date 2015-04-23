@@ -8,7 +8,7 @@ var replace      = require('gulp-replace');
 var fs           = require('fs');
 var path         = require('path');
 
-gulp.task('bump', function() {
+gulp.task('bump', function(callback) {
   var type = 'patch'
 
   gulp.src('./*')
@@ -29,6 +29,13 @@ gulp.task('bump', function() {
       var mm = (date.getMonth()+1).toString(); // getMonth() is zero-based
       var dd  = date.getDate().toString();
       var dateHumanReadable = yyyy + '-' + (mm[1]?mm:"0"+mm[0]) + '-' + (dd[1]?dd:"0"+dd[0]);
+      var waitCounter = 0;
+      var endTrigger = function() { // function to trigger build asap all bumping is done
+        waitCounter++;
+        if (waitCounter == 3) {
+          gulp.start('build');
+        }
+      };
 
       // replace version in json files
       gulp.src(['./bower.json', './package.json'])
@@ -36,19 +43,26 @@ gulp.task('bump', function() {
           version: newVer
         }))
         .pipe(gulp.dest('./'))
-        .on('error', handleErrors);
+        .on('error', handleErrors)
+        .on('end', endTrigger);
 
       // replace version in CHANGELOG
       gulp.src(['./CHANGELOG.md'])
         .pipe(replace(/## unreleased/ig, '## v' + newVer + ' - ' + dateHumanReadable))
         .pipe(gulp.dest('./'))
-        .on('error', handleErrors);
+        .on('error', handleErrors)
+        .on('end', endTrigger);
 
       gulp.src([config.stylus.main])
         .pipe(replace(/Version: \d+.\d+(\.\d+)?(\-\d+)?/g, 'Version: ' + newVer))
         .pipe(gulp.dest(path.dirname(config.stylus.main)))
-        .on('error', handleErrors);
+        .on('error', handleErrors)
+        .on('end', endTrigger);
+
+      callback();
 
   }))
 });
+
+
 

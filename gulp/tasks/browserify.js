@@ -18,7 +18,6 @@ var bundleLogger  = require('../util/bundleLogger');
 var gulp          = require('gulp');
 var handleErrors  = require('../util/handleErrors');
 var source        = require('vinyl-source-stream');
-var pkg           = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 var config        = require('../config').browserify;
 var _             = require('lodash');
 var path          = require('path');
@@ -110,6 +109,7 @@ var browserifyTask = function(callback, devMode) {
 gulp.task('browserify-source', browserifyTask);
 
 gulp.task('browserify-version', ['browserify-source'], function() {
+  var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
   config.bundleConfigs.forEach(function(bundleConfig) {
     console.log(bundleConfig.dest + '/' + bundleConfig.outputName);
     gulp.src([bundleConfig.dest + '/' + bundleConfig.outputName])

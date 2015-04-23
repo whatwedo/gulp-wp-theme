@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 ### Added
-- `gulp bump` command to increment version in `CHANGELOG.md`, `package.json` and `bower.json`
+- `gulp bump` command to increment version in `CHANGELOG.md`, `package.json`, `bower.json` and markup / js / stylus files (version-placeholder: {PKG_VERSION})
 
 ## v0.5.0 - 2015-04-15
 ### Added
