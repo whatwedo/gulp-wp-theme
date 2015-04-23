@@ -32,7 +32,7 @@ gulp.task('bump', function(callback) {
       var waitCounter = 0;
       var endTrigger = function() { // function to trigger build asap all bumping is done
         waitCounter++;
-        if (waitCounter == 3) {
+        if (waitCounter == 2) {
           gulp.start('build');
         }
       };
@@ -50,12 +50,6 @@ gulp.task('bump', function(callback) {
       gulp.src(['./CHANGELOG.md'])
         .pipe(replace(/## unreleased/ig, '## v' + newVer + ' - ' + dateHumanReadable))
         .pipe(gulp.dest('./'))
-        .on('error', handleErrors)
-        .on('end', endTrigger);
-
-      gulp.src([config.stylus.main])
-        .pipe(replace(/Version: \d+.\d+(\.\d+)?(\-\d+)?/g, 'Version: ' + newVer))
-        .pipe(gulp.dest(path.dirname(config.stylus.main)))
         .on('error', handleErrors)
         .on('end', endTrigger);
 
