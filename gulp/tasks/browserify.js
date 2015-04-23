@@ -8,16 +8,19 @@
    See browserify.bundleConfigs in gulp/config.js
 */
 
-var browserify = require('browserify');
-var debowerify = require('debowerify');
-var browserSync = require('browser-sync');
-var watchify = require('watchify');
-var bundleLogger = require('../util/bundleLogger');
-var gulp = require('gulp');
-var handleErrors = require('../util/handleErrors');
-var source = require('vinyl-source-stream');
-var config = require('../config').browserify;
-var _ = require('lodash');
+var browserify    = require('browserify');
+var debowerify    = require('debowerify');
+var browserSync   = require('browser-sync');
+var watchify      = require('watchify');
+var replace       = require('gulp-replace');
+var fs            = require('fs');
+var bundleLogger  = require('../util/bundleLogger');
+var gulp          = require('gulp');
+var handleErrors  = require('../util/handleErrors');
+var source        = require('vinyl-source-stream');
+var config        = require('../config').browserify;
+var _             = require('lodash');
+var path          = require('path');
 
 var browserifyTask = function(callback, devMode) {
 
@@ -101,7 +104,23 @@ var browserifyTask = function(callback, devMode) {
   config.bundleConfigs.forEach(browserifyThis);
 };
 
-gulp.task('browserify', browserifyTask);
+
+
+gulp.task('browserify-source', browserifyTask);
+
+gulp.task('browserify-version', ['browserify-source'], function() {
+  var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+  config.bundleConfigs.forEach(function(bundleConfig) {
+    console.log(bundleConfig.dest + '/' + bundleConfig.outputName);
+    gulp.src([bundleConfig.dest + '/' + bundleConfig.outputName])
+      .pipe(replace(/{PKG_VERSION}/,  pkg.version))
+      .pipe(gulp.dest(bundleConfig.dest))
+      .on('error', handleErrors);
+  });
+});
+
+gulp.task('browserify', ['browserify-source', 'browserify-version']);
+
 
 // Exporting the task so we can call it directly in our watch task, with the 'devMode' option
 module.exports = browserifyTask;
