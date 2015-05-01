@@ -5,6 +5,9 @@ var packageConfig = require('../package.json');
 var dest = './dist/wp-content/themes/' + packageConfig.name;
 var src = './src';
 
+var bower_components = './src/bower_components';
+var node_modules = './node_modules';
+
 module.exports = {
   browserSync: {
     server: {
@@ -24,7 +27,11 @@ module.exports = {
     main: src + "/resources/stylus/*.{styl, stylus}", // files which are compiled with all their decendants
     dest: dest,
     options: {
-      compress: false
+      compress: false,
+      include: [
+        bower_components + '/../', // Shortcut references possible everywhere, e.g. @import 'bower_components/bla'
+        node_modules + '/../'      // Shortcut references possible everywhere, e.g. @import 'node_modules/bla'
+      ]
     }
   },
   images: {
