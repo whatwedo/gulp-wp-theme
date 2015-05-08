@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Added
+- **SVG cleaning**: You can now add svg files to `resources/svg` and they get cleaned on compile and build.
+
+### Fixed
+- Updated Browserify to get rid of a NPM problem with JSONStream. See [substack/node-browserify#1247](https://github.com/substack/node-browserify/pull/1247) for details.
+
 ## v0.7.0 - 2015-04-23
 ### Added
 - `gulp bump` command to increment version in `CHANGELOG.md`, `package.json`, `bower.json` and markup / js / stylus files (version-placeholder: {PKG_VERSION})
