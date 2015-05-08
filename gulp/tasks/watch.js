@@ -10,6 +10,7 @@ gulp.task('watch', ['watchify', 'browserSync'], function() {
   gulp.watch(config.stylus.src, ['stylus']);
   gulp.watch(config.changelog.src, ['changelog']);
   gulp.watch(config.images.src, ['images']);
+  gulp.watch(config.svg.src, ['svg']);
   gulp.watch(config.markup.src, ['markup']);
   gulp.watch(config.copy.meta.src, ['copy-meta']);
 

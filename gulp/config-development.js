@@ -17,9 +17,9 @@ module.exports = {
     },
     open: false,
     files: [
-    dest + "/**",
-    // Exclude Map files
-    "!" + dest + "/**.map"
+      dest + "/**",
+      // Exclude Map files
+      "!" + dest + "/**.map"
     ]
   },
   stylus: {
@@ -37,6 +37,10 @@ module.exports = {
   images: {
     src: src + "/resources/images/**",
     dest: dest + "/resources/images"
+  },
+  svg: {
+    src: src + "/resources/svg/**",
+    dest: dest + "/resources/svg"
   },
   markup: {
     src: src + '/templates/**/*.php',
