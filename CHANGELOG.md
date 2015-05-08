@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## Unreleased
 ### Added
 - **SVG cleaning**: You can now add svg files to `resources/svg` and they get cleaned on compile and build.
+- **node and bower shortcut paths for Stylus**: You can now require or import any stylus file from your bower and npm packages with one simple path reference like `@require 'node_modules/normalize.styl/normalize'` and `@require 'bower_components/normalize.styl/normalize'` from any subfolder.
 
 ### Fixed
 - Updated Browserify to get rid of a NPM problem with JSONStream. See [substack/node-browserify#1247](https://github.com/substack/node-browserify/pull/1247) for details.
