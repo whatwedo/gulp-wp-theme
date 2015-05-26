@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Changed
+- The **copy** task can now be configured to copy any needed folder or files in the given folder structure of `src`. Previously you had to add new copy tasks to copy.js. Now it's possible to extend the task via configuration, making it ready for updates.
+
 ## v0.8.0 - 2015-05-08
 ### Added
 - **SVG cleaning**: You can now add svg files to `resources/svg` and they get cleaned on compile and build.

@@ -47,10 +47,12 @@ module.exports = {
     dest: dest
   },
   copy: {
-    // Meta files e.g. Screenshot for WordPress Theme Selector
-    meta: {
-      src: src + '/*.*',
-      dest: dest
+    src: [
+      src + '/*.*' // Meta files e.g. Screenshot for WordPress Theme Selector
+    ],
+    dest: dest,
+    options: {
+      base: src // ensure that all copy tasks keep folder structure
     }
   },
   changelog: {
