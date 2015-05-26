@@ -12,7 +12,7 @@ gulp.task('watch', ['watchify', 'browserSync'], function() {
   gulp.watch(config.images.src, ['images']);
   gulp.watch(config.svg.src, ['svg']);
   gulp.watch(config.markup.src, ['markup']);
-  gulp.watch(config.copy.meta.src, ['copy-meta']);
+  gulp.watch(config.copy.src, ['copy']);
 
   // Uncomment to use one iof these watchers
   // gulp.watch(config.sass.src,   ['sass']);
