@@ -2,14 +2,14 @@ var gulp 				 = require('gulp');
 var config			 = require('../config');
 var handleErrors = require('../util/handleErrors');
 
-gulp.task('copy-meta', function() {
-	var src = config.copy.meta.src;
+gulp.task('copy-all', function() {
+	var src = config.copy.src;
+	var dest = config.copy.dest;
+	var options = config.copy.options;
 
-	var dest = config.copy.meta.dest;
-
-	return gulp.src(src)
+	return gulp.src(src, options)
 	.pipe(gulp.dest(dest))
 	.on('error', handleErrors);
 });
 
-gulp.task('copy', ['copy-meta']);
+gulp.task('copy', ['copy-all']);
