@@ -1,6 +1,6 @@
 {
   "name": "gulp-wp-theme",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "WordPress Theme Project Templates for Gulp ",
   "repository": {
     "type": "git",

@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## v0.8.2 - 2015-06-16
+### Fixed
+- Stylus includes in build process work like in compile process. Production config sets variables directly and does no longer assign whole objects. This makes changes in development config less risky.
+
 ## v0.8.1 - 2015-05-30
 ### BREAKING CHANGES
 - The **copy** task can now be configured to copy any needed folder or files in the given folder structure of `src`. Previously you had to add new copy tasks to copy.js. Now it's possible to extend the task via configuration, making it ready for updates. **Update your config** as shown in the [initial development config](https://github.com/whatwedo/gulp-wp-theme/blob/v0.8.1/gulp/config-development.js#L49) to get it working with version 0.8.1.
