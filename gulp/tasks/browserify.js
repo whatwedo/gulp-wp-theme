@@ -113,7 +113,7 @@ gulp.task('browserify-version', ['browserify-source'], function() {
   config.bundleConfigs.forEach(function(bundleConfig) {
     console.log(bundleConfig.dest + '/' + bundleConfig.outputName);
     gulp.src([bundleConfig.dest + '/' + bundleConfig.outputName])
-      .pipe(replace(/{PKG_VERSION}/,  pkg.version))
+      .pipe(replace(/{PKG_VERSION}/g,  pkg.version))
       .pipe(gulp.dest(bundleConfig.dest))
       .on('error', handleErrors);
   });
