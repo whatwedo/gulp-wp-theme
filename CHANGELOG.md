@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## v0.8.3 - 2015-06-26
+### Fixed
+- Version replacement works now across all file contents instead of the first match.
+
 ## v0.8.2 - 2015-06-16
 ### Fixed
 - Stylus includes in build process work like in compile process. Production config sets variables directly and does no longer assign whole objects. This makes changes in development config less risky.

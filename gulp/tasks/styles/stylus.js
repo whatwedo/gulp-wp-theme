@@ -30,7 +30,7 @@ gulp.task('stylus', function() {
   //.pipe(gulpif(argv.prod, minifycss(minifyOptions.prod)))
   //.pipe(sourcemaps.init({loadMaps: true }))
   //.pipe(sourcemaps.write('.', { includeConent: false,  sourceRoot: '.' }))
-  .pipe(replace(/{PKG_VERSION}/,  pkg.version))
+  .pipe(replace(/{PKG_VERSION}/g,  pkg.version))
   .pipe(gulp.dest(config.dest))
   .pipe(reload({
     stream: true
