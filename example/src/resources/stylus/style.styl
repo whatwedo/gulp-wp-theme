@@ -1,0 +1,43 @@
+/*!
+Theme Name: Gulp WordPress Theme
+Theme URI: https://github.com/whatwedo/gulp-wp-theme
+Description: WordPress Theme Project Templates for Gulp
+Author: whatwedo GmbH
+Version: {PKG_VERSION}
+*/
+
+/**
+ * Some properties to test if stylus correctly works.
+ * You can safely remove them
+ */
+
+dirs = {
+  vendor: '../../bower_components/'
+};
+@import dirs.vendor + "normalize.styl/normalize";
+
+$color = red
+
+body
+a
+section
+  width: 500px
+  margin: 0 auto
+
+  h2
+    color: green
+
+h1
+  color: $color
+
+/* comment */
+
+@css {
+  h3 {
+    color: yellow;
+  }
+}
+
+@media screen and (max-width: 500px)
+  body
+    color: pink
