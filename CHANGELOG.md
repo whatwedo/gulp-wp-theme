@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## Unreleased
+## v0.8.3 - 2015-06-26
 ### Fixed
 - Version replacement works now across all file contents instead of the first match.
 
