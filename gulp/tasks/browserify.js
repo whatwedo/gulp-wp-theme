@@ -105,22 +105,22 @@ var browserifyTask = function(callback, devMode) {
 };
 
 
+module.exports = function(gulp){
+  gulp.task('browserify-source', browserifyTask);
 
-gulp.task('browserify-source', browserifyTask);
-
-gulp.task('browserify-version', ['browserify-source'], function() {
-  var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-  config.bundleConfigs.forEach(function(bundleConfig) {
-    console.log(bundleConfig.dest + '/' + bundleConfig.outputName);
-    gulp.src([bundleConfig.dest + '/' + bundleConfig.outputName])
-      .pipe(replace(/{PKG_VERSION}/g,  pkg.version))
-      .pipe(gulp.dest(bundleConfig.dest))
-      .on('error', handleErrors);
+  gulp.task('browserify-version', ['browserify-source'], function() {
+    var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+    config.bundleConfigs.forEach(function(bundleConfig) {
+      console.log(bundleConfig.dest + '/' + bundleConfig.outputName);
+      gulp.src([bundleConfig.dest + '/' + bundleConfig.outputName])
+        .pipe(replace(/{PKG_VERSION}/g,  pkg.version))
+        .pipe(gulp.dest(bundleConfig.dest))
+        .on('error', handleErrors);
+    });
   });
-});
 
-gulp.task('browserify', ['browserify-source', 'browserify-version']);
-
+  gulp.task('browserify', ['browserify-source', 'browserify-version']);
+};
 
 // Exporting the task so we can call it directly in our watch task, with the 'devMode' option
-module.exports = browserifyTask;
+//module.exports = browserifyTask;

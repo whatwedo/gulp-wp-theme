@@ -1,4 +1,3 @@
-var gulp         = require('gulp');
 var config       = require('../config');
 var bump         = require('gulp-bump');
 var prompt       = require('gulp-prompt');
@@ -8,10 +7,12 @@ var replace      = require('gulp-replace');
 var fs           = require('fs');
 var path         = require('path');
 
-gulp.task('bump', function(callback) {
-  var type = 'patch'
+module.exports = function(gulp){
+  
+  gulp.task('bump', function(callback) {
+    var type = 'patch'
 
-  gulp.src('./*')
+    gulp.src('./*')
     .pipe(prompt.prompt({
       type: 'checkbox',
       name: 'bump',
@@ -39,24 +40,22 @@ gulp.task('bump', function(callback) {
 
       // replace version in json files
       gulp.src(['./bower.json', './package.json'])
-        .pipe(bump({
-          version: newVer
-        }))
-        .pipe(gulp.dest('./'))
-        .on('error', handleErrors)
-        .on('end', endTrigger);
+      .pipe(bump({
+        version: newVer
+      }))
+      .pipe(gulp.dest('./'))
+      .on('error', handleErrors)
+      .on('end', endTrigger);
 
       // replace version in CHANGELOG
       gulp.src(['./CHANGELOG.md'])
-        .pipe(replace(/## unreleased/ig, '## v' + newVer + ' - ' + dateHumanReadable))
-        .pipe(gulp.dest('./'))
-        .on('error', handleErrors)
-        .on('end', endTrigger);
+      .pipe(replace(/## unreleased/ig, '## v' + newVer + ' - ' + dateHumanReadable))
+      .pipe(gulp.dest('./'))
+      .on('error', handleErrors)
+      .on('end', endTrigger);
 
       callback();
 
-  }))
-});
-
-
-
+    }))
+  });
+};
