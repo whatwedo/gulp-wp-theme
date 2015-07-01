@@ -1,17 +1,14 @@
-var gulp         = require('gulp');
-var config       = require('../config');
+'use strict';
+
 var bump         = require('gulp-bump');
 var prompt       = require('gulp-prompt');
 var handleErrors = require('../util/handleErrors');
 var semver       = require('semver');
 var replace      = require('gulp-replace');
-var fs           = require('fs');
-var path         = require('path');
 
-gulp.task('bump', function(callback) {
-  var type = 'patch'
-
-  gulp.src('./*')
+module.exports = function(gulp, config){
+  gulp.task('bump', function(callback) {
+    gulp.src('./*')
     .pipe(prompt.prompt({
       type: 'checkbox',
       name: 'bump',
@@ -20,8 +17,7 @@ gulp.task('bump', function(callback) {
     }, function(res){
 
       // get new version
-      var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-      var newVer = semver.inc(pkg.version, res.bump[0]);
+      var newVer = semver.inc(config.options.version, res.bump[0]);
 
       // format date
       var date = new Date();
@@ -39,24 +35,22 @@ gulp.task('bump', function(callback) {
 
       // replace version in json files
       gulp.src(['./bower.json', './package.json'])
-        .pipe(bump({
-          version: newVer
-        }))
-        .pipe(gulp.dest('./'))
-        .on('error', handleErrors)
-        .on('end', endTrigger);
+      .pipe(bump({
+        version: newVer
+      }))
+      .pipe(gulp.dest('./'))
+      .on('error', handleErrors)
+      .on('end', endTrigger);
 
       // replace version in CHANGELOG
       gulp.src(['./CHANGELOG.md'])
-        .pipe(replace(/## unreleased/ig, '## v' + newVer + ' - ' + dateHumanReadable))
-        .pipe(gulp.dest('./'))
-        .on('error', handleErrors)
-        .on('end', endTrigger);
+      .pipe(replace(config.bump.options.unreleasedPlaceholder, '## v' + newVer + ' - ' + dateHumanReadable))
+      .pipe(gulp.dest('./'))
+      .on('error', handleErrors)
+      .on('end', endTrigger);
 
       callback();
 
-  }))
-});
-
-
-
+    }));
+  });
+};

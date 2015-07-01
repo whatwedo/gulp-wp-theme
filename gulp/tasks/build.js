@@ -1,3 +1,5 @@
-var gulp = require('gulp');
+'use strict';
 
-gulp.task('build', ['browserify', 'stylus', 'images', 'svg', 'markup', 'copy', 'changelog']);
+module.exports = function(gulp){
+  gulp.task('build', ['browserify', 'stylus', 'images', 'svg', 'markup', 'copy', 'changelog']);
+};
