@@ -1,3 +1,4 @@
+'use strict';
 var browserifyTask = require('./browserify');
 
 module.exports = function(gulp){

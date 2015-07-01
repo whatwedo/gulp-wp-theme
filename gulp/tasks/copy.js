@@ -1,7 +1,7 @@
-var config			 = require('../config');
+'use strict';
 var handleErrors = require('../util/handleErrors');
 
-module.exports = function(gulp){
+module.exports = function(gulp, config){
 	gulp.task('copy-all', function() {
 		var src = config.copy.src;
 		var dest = config.copy.dest;

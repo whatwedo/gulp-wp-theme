@@ -1,12 +1,12 @@
+'use strict';
 var changed    = require('gulp-changed');
 var svgmin = require('gulp-svgmin');
-var config     = require('../config').svg;
 
-module.exports = function(gulp){
+module.exports = function(gulp, config){
   gulp.task('svg', function() {
-    return gulp.src(config.src)
-      .pipe(changed(config.dest)) // Ignore unchanged files
-      .pipe(svgmin()) // Optimize
-      .pipe(gulp.dest(config.dest));
+    return gulp.src(config.svg.src)
+    .pipe(changed(config.svg.dest)) // Ignore unchanged files
+    .pipe(svgmin()) // Optimize
+    .pipe(gulp.dest(config.svg.dest));
   });
 };

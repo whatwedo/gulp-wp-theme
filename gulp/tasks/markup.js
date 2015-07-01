@@ -1,16 +1,10 @@
-var gutil         = require('gulp-util');
-var path          = require('path');
-var files         = require('../util/files');
-var config        = require('../config');
+'use strict';
 var replace       = require('gulp-replace');
-var fs            = require('fs');
 
-module.exports = function(gulp){  
+module.exports = function(gulp, config){
   gulp.task('markup', function() {
-    var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
     return gulp.src(config.markup.src)
-    .pipe(replace(/{PKG_VERSION}/g,  pkg.version))
+    .pipe(replace(/{PKG_VERSION}/g, config.options.version))
     .pipe(gulp.dest(config.markup.dest));
   });
-
 };

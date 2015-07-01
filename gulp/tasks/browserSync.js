@@ -1,8 +1,8 @@
+'use strict';
 var browserSync = require('browser-sync');
-var config      = require('../config').browserSync;
 
-module.exports = function(gulp){
+module.exports = function(gulp, config){
   gulp.task('browserSync', ['build'], function() {
-    browserSync(config);
+    browserSync(config.browserSync);
   });
 };
