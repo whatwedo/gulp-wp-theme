@@ -9,7 +9,7 @@ var node_modules = './node_modules';
 
 module.exports = {
   options: {
-    version: JSON.parse(fs.readFileSync('./package.json', 'utf8'))
+    version: packageConfig.version
   },
   autoprefixer: [
     'last 2 version',
@@ -66,8 +66,10 @@ module.exports = {
     }
   },
   bump: {
+    unreleasedPlaceholder: /## unreleased/ig, // To be replaced in documents with version number
+    prereleaseChangelogs: false, // If true, changelog update with prerelease bump
     options: {
-      unreleasedPlaceholder: /## unreleased/ig
+      preid : 'beta' // Set the prerelase tag to use
     }
   },
   changelog: {
