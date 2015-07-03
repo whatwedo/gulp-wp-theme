@@ -2,3 +2,6 @@ example/
 dist/
 src/
 Makefile
+artwork/
+.jshintrc
+.editorconfig

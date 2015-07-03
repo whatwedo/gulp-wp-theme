@@ -1,11 +1,33 @@
 {
   "name": "gulp-wp-theme",
-  "version": "0.8.3",
+  "version": "1.0.0",
   "description": "WordPress Theme Project Templates for Gulp ",
+  "author": "whatwedo <welove@whatwedo.ch",
+  "contributors": [
+    {
+      "name": "René Stalder",
+      "email": "rene@whatwedo.ch"
+    },
+    {
+      "name": "Ueli Banholzer",
+      "email": "ueli@whatwedo.ch"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "gulp",
+    "themes",
+    "browserify",
+    "wp"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/whatwedo/gulp-wp-theme.git"
   },
+  "bugs": {
+    "url": "https://github.com/whatwedo/gulp-wp-theme/issues"
+  },
+  "license": "MIT",
   "main": "index.js",
   "browser": {},
   "browserify": {

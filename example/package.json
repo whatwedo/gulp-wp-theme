@@ -1,6 +1,6 @@
 {
   "name": "gulp-wp-theme-tester",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "My WordPress Project",
   "repository": {
     "type": "git",
@@ -17,8 +17,7 @@
     "jQuery": "global:jQuery"
   },
   "devDependencies": {
-    "gulp-wp-theme": "../",
-    "require-dir": "^0.3.0"
+    "gulp-wp-theme": "^1.0.0"
   },
   "dependencies": {}
 }
