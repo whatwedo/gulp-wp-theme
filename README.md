@@ -1,82 +1,31 @@
-gulp-wp-theme
-============
+<p align="center">
+  <a href="http://gulpjs.com">
+    <img height="257" width="114" src="https://raw.githubusercontent.com/whatwedo/gulp-wp-theme/master/artwork/gulp-wp-theme-2x.png">
+  </a>
+</p>
 
-gulp-wp-theme, namely Gulp Wordpress Theme, is a Gulp + Browserify boilerplate with examples of how to accomplish some common tasks and workflows. Read the [blog post](http://viget.com/extend/gulp-browserify-starter-faq) for more context, and check out the [Wiki](https://github.com/greypants/gulp-starter/wiki) for some good background knowledge.
 
-It was initially started by the [gulp-starter Project](https://github.com/greypants/gulp-starter) and modified by [whatwedo](http://whatwedo.ch) for use with WordPress Themes. Also, all dependencies to Ruby Gem packages were removed.
+# gulp-wp-theme
+
+gulp-wp-theme, namely **gulp Wordpress Theme**, is a build system made with gulp for programming and compiling WordPress Themes using browserify and CSS precompilers.
 
 It includes the following tools, tasks, and workflows:
 
-- [Browserify](http://browserify.org/) (with [browserify-shim](https://github.com/thlorenz/browserify-shim))
-- [Watchify](https://github.com/substack/watchify) (caching version of browserify for super fast rebuilds)
-- [Stylus](https://learnboost.github.io/stylus/)
-- [BrowserSync](http://browsersync.io) for live reloading and a static server
-- Image optimization
+- [Browserify](http://browserify.org/) (with [browserify-shim](https://github.com/thlorenz/browserify-shim)) – Make modularized JavaScript in a node like manner and output different bundles.
+- [Watchify](https://github.com/substack/watchify) – caching version of browserify for super fast rebuilds)
+- [Stylus](https://learnboost.github.io/stylus/) – CSS precompiler and syntax
+- [BrowserSync](http://browsersync.io) – for live reloading and a static server
+- A bump task to update the version numbers of your theme.
+- A changelog task to pull out a HTML changelog you could use to build into your themes configuration or the WordPress dashboard.
+- Image and SVG optimization
 - Error Notifications in Notification Center
 - Pre configured global WordPress jQuery for use with browserify
 - Different configs for development, production and user specific environment
 
-## How it works
+## How to use
 
-You specify your themes name in the package.json, for example **my-wp-theme**
+Take a look at the [documentation](https://github.com/whatwedo/gulp-wp-theme/blob/master/docs/README.md).
 
-Now when you run gulp, the tasks take the content of the `src` folder, compile it and output the result to `dist/wp-content/themes/<yourthemename>`. You can install WordPress to the `dist` folder to develop your theme local.
-
-## Installation
-
-If you've never used Node or npm before, you'll need to install Node.
-If you use homebrew, do:
-
-```
-brew install node
-```
-
-Otherwise, you can download and install from [here](http://nodejs.org/download/).
-
-### Install Gulp Globally
-
-Gulp must be installed globally in order to use the command line tools. *You may need to use `sudo`*
-
-
-```
-npm install -g gulp
-```
-
-Alternatively, you can run the version of gulp installed local to the project instead with
-
-
-```
-./node_modules/.bin/gulp
-```
-
-### Install npm dependencies
-
-```
-npm install
-```
-
-This runs through all dependencies listed in `package.json` and downloads them
-to a `node_modules` folder in your project directory.
-
-## Initial setup
-
-* **Rename your theme** in ```packages.json```
-* **Rename your theme** in ```.bowerrc```
-* **Configure** your local server. Rename ```config-user-example.js``` in *gulp/* to **```config-user.js```**.
-  * Override the parameters you need to be different in you local development environment in the config-user.js, delete the other parameters you want to keep default.
-* Optionally run ```bower install``` before or after you have configured your vendors.
-
-### Production config
-
-You can override the parameters in ```config-production.js```. These parameters will be used when you compile via `gulp --env production`.
-
-## Run gulp and be amazed.
-
-```
-gulp
-```
-
-Whole documentation for the build system can be found in the [`gulp/README.md`](https://github.com/whatwedo/gulp-wp-theme/blob/develop/gulp/README.md).
 
 ## Contribution
 
