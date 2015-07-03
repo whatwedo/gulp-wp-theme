@@ -1,5 +1,4 @@
-var fs   = require('fs');
-var gutil = require('gulp-util');
+var fs           = require('fs');
 var packageConfig = require('../package.json');
 
 var dest = './dist/wp-content/themes/' + packageConfig.name;
@@ -9,6 +8,17 @@ var bower_components = './src/bower_components';
 var node_modules = './node_modules';
 
 module.exports = {
+  options: {
+    version: packageConfig.version
+  },
+  autoprefixer: [
+    'last 2 version',
+    'safari 5',
+    'ie 9',
+    'opera 12.1',
+    'ios 6',
+    'android 4'
+  ],
   browserSync: {
     server: {
       // We're serving the src folder as well
@@ -53,6 +63,13 @@ module.exports = {
     dest: dest,
     options: {
       base: src // ensure that all copy tasks keep folder structure
+    }
+  },
+  bump: {
+    unreleasedPlaceholder: /## unreleased/ig, // To be replaced in documents with version number
+    prereleaseChangelogs: false, // If true, changelog update with prerelease bump
+    options: {
+      preid : 'beta' // Set the prerelase tag to use
     }
   },
   changelog: {

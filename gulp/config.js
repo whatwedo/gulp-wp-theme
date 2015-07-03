@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * This file checks for different configs and merges them in correct order.
  * There are following configs
@@ -9,26 +11,48 @@
  *  Config overrides: config-production > config-user > config-development
  */
 
-var fs = require('fs');
-var gutil = require('gulp-util');
 var args = require('yargs').argv;
-var gulpif = require('gulp-if');
-var extend = require('node.extend');
+var _ = require('lodash');
 
-var config = require('./config-development.js');
-
-var hasUserConfig = fs.existsSync('./gulp/config-user.js');
-var hasProductionConfig = fs.existsSync('./gulp/config-production.js');
+var defaultConfigDev = require('./config-development');
+var defaultConfigProd = require('./config-production');
 var isProductionEnv = args.env === 'production' || args.env === 'prod';
 
-if (hasUserConfig) {
-  var userConfig = require('./config-user.js');
-  var mergedUserConfig = extend(true, {}, config, userConfig);
-  config = extend(true, {}, mergedUserConfig);
-}
+module.exports = function(config){
+  var mergedConfig;
 
-if (hasProductionConfig && isProductionEnv) {
-  config = require('./config-production.js');
-}
+  // Create empty configuration container for defaults if no config submitted
+  if(!config){
+    config = {
+      dev: null,
+      prod: null,
+      user: null
+    };
+  }
 
-module.exports = config;
+  // Merge submitted configs where needed with defaults
+  if(config.dev){
+    config.dev = _.merge(defaultConfigDev, config.dev);
+  } else {
+    config.dev = defaultConfigDev;
+  }
+
+  if(config.prod){
+    config.prod = _.merge(defaultConfigProd, config.prod);
+  } else {
+    config.prod = defaultConfigProd;
+  }
+
+  // Create concrete config for compilation
+  // Take Development Config as a base, start with user config
+  var mergedConfig = config.dev;
+  if(config.user) {
+    mergedConfig = _.merge(mergedConfig, config.user);
+  }
+
+  if(isProductionEnv) {
+    mergedConfig = _.merge(mergedConfig, config.user);
+  }
+
+  return mergedConfig;
+};

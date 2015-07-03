@@ -1,0 +1,23 @@
+{
+  "name": "gulp-wp-theme-tester",
+  "version": "1.0.0",
+  "description": "My WordPress Project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whatwedo/gulp-wp-theme.git"
+  },
+  "main": "gulpfile.js",
+  "browser": {},
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jQuery": "global:jQuery"
+  },
+  "devDependencies": {
+    "gulp-wp-theme": "^1.0.0"
+  },
+  "dependencies": {}
+}

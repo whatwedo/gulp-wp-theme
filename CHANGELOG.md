@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.0.0 - 2015-07-03
+### Added
+- **npm support**: gulp-wp-theme is now useable via npm. This makes it easier to
+  update in future. *Find an example project in the `example` folder of this
+  repository.*
+- **Bump placeholder can now be configured** via `config.bump.unreleasedPlaceholder`.
+  This makes it possible to use the bump task in any language.
+- **autoprefixer can now be configured** via `config.autoprefixer`.
+
 ## v0.8.3 - 2015-06-26
 ### Fixed
 - Version replacement works now across all file contents instead of the first match.
