@@ -81,7 +81,9 @@ module.exports = function(gulp, config){
       afterBump(waitCounter);
     });
 
-    if(prerelease && config.bump.prereleaseChangelogs){
+    gutil.log(prerelease);
+
+    if(!prerelease || (prerelease && config.bump.prereleaseChangelogs)){
       // replace version in CHANGELOG
       gulp.src(['./CHANGELOG.md'])
       .pipe(replace(config.bump.unreleasedPlaceholder, '## v' + newVer + ' - ' + dateHumanReadable))
