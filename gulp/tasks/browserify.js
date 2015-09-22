@@ -60,9 +60,11 @@ module.exports = function(gulp, config){
       b.transform(debowerify);
 
       if(config.browserify.transforms && config.browserify.transforms.uglifyify){
-        b.transform({
-          global: true
-        }, 'uglifyify');
+        if(!bundleConfig.transforms){
+          bundleConfig.transforms = [];
+        }
+
+        bundleConfig.transforms.push([ 'uglifyify', { global: true } ]);
       }
 
       var bundle = function() {
