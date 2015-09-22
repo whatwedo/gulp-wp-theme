@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Fixed
+- The JavaScript Minification in build mode works now correctly.
+
 ## v1.0.0 - 2015-07-03
 ### Added
 - **npm support**: gulp-wp-theme is now useable via npm. This makes it easier to
