@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## Unreleased
 ### Fixed
 - The JavaScript Minification in build mode works now correctly.
+- A bug in the watcher task was removed.
+
+### Changes
+- The default output theme folder will be named after package.json of your project instead of the npm package.
 
 ## v1.0.0 - 2015-07-03
 ### Added
