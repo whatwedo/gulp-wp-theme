@@ -1,5 +1,5 @@
 var fs           = require('fs');
-var packageConfig = require('../package.json');
+var packageConfig = require(process.env.PWD + '/package.json');
 
 var dest = './dist/wp-content/themes/' + packageConfig.name;
 var src = './src';
