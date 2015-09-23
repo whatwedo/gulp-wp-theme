@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## Unreleased
+## v1.0.1 - 2015-09-23
 ### Fixed
 - The JavaScript Minification in build mode works now correctly.
 - A bug in the watcher task was removed.
