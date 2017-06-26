@@ -1,74 +1,38 @@
-build
-Desktop.ini
-
-**/node_modules
-src/bower_components
-dist/wp-content/themes/gulp-wp-theme
-
-# Ignore automatically generated cruft
-*.log
-.sass-cache
-
-# Ignore config
-local-config.php
-
-# Operating system files
-.Spotlight-V100
-.Trashes
-.DS_Store
-.DS_Store?
-ehthumbs.db
-Thumbs.db
-
 # Vagrant
 .vagrant
 
-# Created by https://www.gitignore.io
+# WordPress
+dist/*.log
+dist/local-config.php
+dist/wp-content/advanced-cache.php
+dist/wp-content/backup-db/
+dist/wp-content/backups/
+dist/wp-content/blogs.dir/
+dist/wp-content/cache/
+dist/wp-content/upgrade/
+dist/wp-content/uploads/
+dist/wp-content/themes/*
+dist/wp-content/index.php
+dist/wp-content/languages/**/*.po
+dist/wp-content/languages/**/*.mo
+dist/wp-content/wp-cache-config.php
+dist/wp-content/plugins/*
+dist/wp-includes
+dist/wp-admin
+dist/wp-*.php
+dist/xmlrpc.php
+dist/index.php
+!dist/wp-config.php
+dist/.htaccess
+dist/license.txt
+dist/readme.html
+dist/sitemap.xml
+dist/sitemap.xml.gz
 
-### Intellij ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
-*.iml
+# Project
+# !dist/wp-content/themes/gulp-wp-theme
 
-## Directory-based project format:
-.idea/
-# if you remove the above rule, at least ignore the following:
-
-# User-specific stuff:
-# .idea/workspace.xml
-# .idea/tasks.xml
-# .idea/dictionaries
-
-# Sensitive or high-churn files:
-# .idea/dataSources.ids
-# .idea/dataSources.xml
-# .idea/sqlDataSources.xml
-# .idea/dynamic.xml
-# .idea/uiDesigner.xml
-
-# Gradle:
-# .idea/gradle.xml
-# .idea/libraries
-
-# Mongo Explorer plugin:
-# .idea/mongoSettings.xml
-
-## File-based project format:
-*.ipr
-*.iws
-
-## Plugin-specific files:
-
-# IntelliJ
-out/
-
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
+# Node
+node_modules
+.npm
