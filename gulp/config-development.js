@@ -90,10 +90,6 @@ module.exports = {
       entries: src + '/resources/javascripts/index.js',
       dest: dest,
       outputName: 'app.js'
-    }/*, {
-      entries: './src/javascript/head.coffee',
-      dest: dest,
-      outputName: 'head.js'
-    }*/]
+    }]
   }
 };

@@ -17,7 +17,7 @@ $contents[] = '<?php';
 $contents[] = '';
 $contents[] = 'define(\'DB_NAME\',     \'gulp-wp-theme\');';
 $contents[] = 'define(\'DB_USER\',     \'root\');';
-$contents[] = 'define(\'DB_PASSWORD\', \'\');';
+$contents[] = 'define(\'DB_PASSWORD\', \'root\');';
 $contents[] = 'define(\'DB_HOST\',     \'localhost\');';
 $contents[] = '';
 $contents[] = '$table_prefix =       \'wp_\';';

@@ -11,7 +11,6 @@
 */
 
 var browserify    = require('browserify');
-var debowerify    = require('debowerify');
 var browserSync   = require('browser-sync');
 var watchify      = require('watchify');
 var replace       = require('gulp-replace');
@@ -57,7 +56,6 @@ module.exports = function(gulp, config){
       }
 
       var b = browserify(bundleConfig);
-      b.transform(debowerify);
 
       if(config.browserify.transforms && config.browserify.transforms.uglifyify){
         if(!bundleConfig.transforms){
@@ -89,7 +87,7 @@ module.exports = function(gulp, config){
 
       if (devMode) {
         // Wrap with watchify and rebundle on changes
-        b = watchify(b);
+        b = watchify(b, {poll: true});
         // Rebundle on update
         b.on('update', bundle);
         bundleLogger.watch(bundleConfig.outputName);
