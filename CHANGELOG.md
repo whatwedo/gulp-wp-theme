@@ -2,6 +2,23 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## v1.1.0 - 2017-06-26
+### Added
+ - Vagranfile for testing and project initialisation
+
+### Changes
+ - Updated dependencies
+ - Removed debowerfiy dependency
+ - Removed bower dependency
+ - Removed gulp-if dependency
+ - Removed minify-css dependency
+ - Removed gulp-sourcemaps dependency
+ - Removed `example` folder. Please use `src` as an example
+
+### Fixed
+ - Use Polling in watchify taks, so it works on Vagrant NFS Shares
+
 ## v1.0.1 - 2015-09-23
 ### Fixed
 - The JavaScript Minification in build mode works now correctly.

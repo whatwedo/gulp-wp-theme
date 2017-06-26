@@ -21,9 +21,6 @@ module.exports = function(gulp, config){
     .pipe(stylus(config.stylus.options))
     .pipe(gulp.dest(config.stylus.dest))
     .pipe(autoprefixer(config.autoprefixer))
-    //.pipe(gulpif(argv.prod, minifycss(minifyOptions.prod)))
-    //.pipe(sourcemaps.init({loadMaps: true }))
-    //.pipe(sourcemaps.write('.', { includeConent: false,  sourceRoot: '.' }))
     .pipe(replace(/{PKG_VERSION}/g,  config.options.version))
     .pipe(gulp.dest(config.stylus.dest))
     .pipe(reload({
