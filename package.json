@@ -5,12 +5,16 @@
   "author": "whatwedo <welove@whatwedo.ch",
   "contributors": [
     {
-      "name": "René Stalder",
-      "email": "rene@whatwedo.ch"
+      "name": "Felix Imobersteg",
+      "email": "felix@whatwedo.ch"
     },
     {
       "name": "Ueli Banholzer",
       "email": "ueli@whatwedo.ch"
+    },
+    {
+      "name": "René Stalder",
+      "email": "rene@whatwedo.ch"
     }
   ],
   "keywords": [
@@ -39,41 +43,38 @@
     "jQuery": "global:jQuery"
   },
   "dependencies": {
-    "browser-sync": "~2.7.1",
-    "browserify": "~10.1.3",
-    "browserify-shim": "~3.8.6",
-    "debowerify": "1.2.1",
-    "glob": "^5.0.12",
-    "glob-stream": "^5.0.0",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "*",
-    "gulp-bump": "^0.3.0",
-    "gulp-changed": "^1.2.1",
-    "gulp-if": "~1.2.5",
-    "gulp-imagemin": "^2.2.1",
-    "gulp-markdown": "^1.0.0",
-    "gulp-minify-css": "^1.1.1",
+    "browser-sync": "^2.18.12",
+    "browserify": "^10.2.6",
+    "browserify-shim": "^3.8.14",
+    "debowerify": "^1.5.0",
+    "glob": "^5.0.15",
+    "glob-stream": "^5.3.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-bump": "^0.3.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-markdown": "^1.2.0",
+    "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^2.2.0",
-    "gulp-plumber": "*",
+    "gulp-plumber": "^1.1.0",
     "gulp-prompt": "^0.1.2",
-    "gulp-replace": "^0.5.3",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-stylus": "^2.0.1",
-    "gulp-svgmin": "^1.1.2",
-    "gulp-util": "^3.0.4",
-    "hbsfy": "~2.2.1",
-    "lodash": "^3.8.0",
-    "node.extend": "^1.1.3",
-    "pretty-hrtime": "~1.0.0",
-    "require-dir": "^0.3.0",
-    "semver": "^4.3.4",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^1.12.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-util": "^3.0.8",
+    "hbsfy": "^2.7.0",
+    "lodash": "^3.10.1",
+    "node.extend": "^1.1.6",
+    "pretty-hrtime": "^1.0.3",
+    "require-dir": "^0.3.2",
+    "semver": "^4.3.6",
     "through2": "^0.6.5",
-    "uglifyify": "^3.0.1",
-    "vinyl-source-stream": "~1.1.0",
-    "watchify": "~3.2.1",
-    "yargs": "^3.8.0"
-  },
-  "devDependencies": {
-    "bower": "^1.4.1"
+    "uglifyify": "^3.0.4",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.2",
+    "yargs": "^3.32.0"
   }
 }
