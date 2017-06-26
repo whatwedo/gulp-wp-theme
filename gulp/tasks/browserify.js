@@ -89,7 +89,7 @@ module.exports = function(gulp, config){
 
       if (devMode) {
         // Wrap with watchify and rebundle on changes
-        b = watchify(b);
+        b = watchify(b, {poll: true});
         // Rebundle on update
         b.on('update', bundle);
         bundleLogger.watch(bundleConfig.outputName);
