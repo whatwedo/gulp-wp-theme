@@ -1,3 +1,10 @@
+![unmaintained](http://img.shields.io/badge/status-unmaintained-red.png)
+
+Currently unmaintained because we're not doing less frontend work than before.
+
+---
+
+
 <p align="center">
   <a href="http://gulpjs.com">
     <img height="257" width="114" src="https://raw.githubusercontent.com/whatwedo/gulp-wp-theme/master/artwork/gulp-wp-theme-2x.png">
